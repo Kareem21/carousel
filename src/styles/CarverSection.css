@@ -1,0 +1,71 @@
+/* Carvers Section Styles */
+.carvers-section {
+    margin-top: 80px;
+    text-align: center;
+    color: #6c3e0b;
+    background-color: #f9f5ed;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.carvers-heading {
+    font-family: 'Garamond', serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.carvers-links {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.carvers-links a {
+    color: #8b5e3c;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.carvers-links a:hover {
+    color: #4b3a2d;
+    text-decoration: underline;
+}
+
+.carvers-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.carvers-images img {
+    width: 100%;
+    max-width: 300px;
+    min-width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.carvers-images img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .carvers-images {
+        flex-wrap: wrap;
+    }
+
+    .carvers-images img {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
