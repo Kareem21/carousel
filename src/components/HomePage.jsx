@@ -5,12 +5,12 @@ import '../styles/CarverSection.css'; // Import your global stylesheet
 import ThreeDCarousel from './ThreeDCarousel';
 
 const carouselItems = [
-    { name: 'Stein and Goldstein', image: '../../public/Dentzel/D20.png' },
-    { name: 'Carmel', image: '../../public/Dentzel/D20.png' },
-    { name: 'Dentzel', image: '../../public/Dentzel/D20.png' },
-    { name: 'Misc', image: '../../public/Dentzel/D20.png' },
-    { name: 'Randomname', image: '../../public/Dentzel/D21.png' },
-    { name: 'Foreign', image: '../../public/Dentzel/D22.png' },
+    { name: 'Stein and Goldstein', image: '/Dentzel/D20.png' },
+    { name: 'Carmel', image: '/Dentzel/D20.png' },
+    { name: 'Dentzel', image: '/Dentzel/D20.png' },
+    { name: 'Misc', image: '/Dentzel/D20.png' },
+    { name: 'Randomname', image: '/Dentzel/D21.png' },
+    { name: 'Foreign', image: '/Dentzel/D22.png' },
     // Add more horses here
 ];
 
