@@ -1,0 +1,28 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    background: linear-gradient(
+            90deg,
+            #ebdbc4 0%,
+            #f8f0e5 29%,
+            #f8f0e5 74%,
+            #ebdbc4 100%
+    );
+}
+
+
+#root {
+    min-height: 100vh;
+}
+
+/* Add this to ensure content doesn't overlap with fixed navbar if you have one */
+.page-content {
+    padding-top: 60px; /* Adjust this value based on your navbar height */
+}

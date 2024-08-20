@@ -3,7 +3,7 @@
     margin-top: 80px;
     text-align: center;
     color: #6c3e0b;
-    background-color: #f9f5ed;
+    background-color: rgba(249, 245, 237, 0.9); /* Changed to semi-transparent */
     padding: 60px 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);

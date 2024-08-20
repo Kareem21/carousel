@@ -1,11 +1,14 @@
 import React from 'react';
 import '../styles/About.css';
+import '../styles/App.css';
+import "@fontsource/playfair-display/600.css"; // Specify weight
 
 const AboutPage = () => (
     <div className="page-content">
         <div className="about">
             <div className="content">
                 <h2>The Carousel World Story</h2>
+
                 <div className="story-section">
                     <div className="text-content">
                         <p>
@@ -25,7 +28,7 @@ const AboutPage = () => (
                             operate.
                         </p>
                     </div>
-                    <img src="../../public/Aboutus/granda.gif" alt="Carousel"/>
+                    <img src="/Aboutus/granda.gif" alt="Carousel"/>
                 </div>
 
                 <div className="story-section">
@@ -44,8 +47,9 @@ const AboutPage = () => (
                             vast trove of discarded carousel art...
                         </p>
                     </div>
-                    <img src="../../public/Aboutus/blackwhite.jpg " alt="Carousel"/>
+                    <img src="/Aboutus/blackwhite.jpg" alt="Carousel"/>
                 </div>
+
                 <div className="story-section">
                     <div className="text-content">
                         <p>
@@ -65,8 +69,9 @@ const AboutPage = () => (
                             operate.
                         </p>
                     </div>
-                    <img src="../../public/Aboutus/blackwhite.jpg " alt="Carousel"/>
+                    <img src="/Aboutus/blackwhite.jpg" alt="Carousel"/>
                 </div>
+
                 <div className="story-section">
                     <div className="text-content">
                         <p>
@@ -86,8 +91,9 @@ const AboutPage = () => (
                             operate.
                         </p>
                     </div>
-                    <img src="../../public/Dentzel/D1-removebg-preview.png" alt="Carousel"/>
+                    <img src="/Dentzel/D1-removebg-preview.png" alt="Carousel"/>
                 </div>
+
                 <div className="story-section">
                     <div className="text-content">
                         <p>
@@ -107,7 +113,7 @@ const AboutPage = () => (
                             operate.
                         </p>
                     </div>
-                    <img src="../../public/Dentzel/D1-removebg-preview.png" alt="Carousel"/>
+                    <img src="/Dentzel/D1-removebg-preview.png" alt="Carousel"/>
                 </div>
             </div>
         </div>

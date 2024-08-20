@@ -1,0 +1,128 @@
+/* Events.css */
+
+.events-page {
+    background: linear-gradient(to bottom, #ebdbc4 0%, #f8f0e5 29%, #f8f0e5 74%, #ebdbc4 100%);
+    color: #6c3e0b;
+    font-family: 'Georgia', serif;
+    padding: 2rem 0;
+}
+
+.banner, .event-types, .past-events, .unique-experience, .commercials, .schedule-call {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6c3e0b;
+}
+
+.banner {
+    text-align: center;
+    background-color: #00274d;
+    color: #dac0a3;
+    padding: 3rem 1rem;
+    border-radius: 8px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #dac0a3;
+}
+
+.event-types {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.event-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card h3, .event-card p {
+    padding: 0 1rem;
+}
+
+.past-events .event-highlight {
+    background-color: #00274d;
+    color: #dac0a3;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.past-events img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.unique-experience, .commercials p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.schedule-call {
+    text-align: center;
+}
+
+.scheduler-embed {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #00274d;
+    color: #dac0a3;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+footer .contact-info, footer .footer-links, footer .social-links {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer a {
+    color: #dac0a3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .event-types {
+        flex-direction: column;
+    }
+}
