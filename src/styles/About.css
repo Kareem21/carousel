@@ -1,7 +1,7 @@
 /* About Section Styles */
 .about {
-    background-color: #f8f0e5;
-    padding: 60px 20px;
+    background: linear-gradient(to right, #ebdbc4, #f8f0e5, #ebdbc4);
+    padding: 40px 20px;
 }
 
 .about .content {
@@ -11,28 +11,28 @@
 
 .about h2 {
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 50px;
     line-height: 1.2;
     color: #6c3e0b;
-    letter-spacing: -0.5px;
-    margin-bottom: 20px;
-    text-align: left;
+    letter-spacing: -2.5px;
+    margin-bottom: 40px;
+    text-align: center; /* Center the heading */
 }
 
 .about p {
     font-family: 'Bitter', serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 28px;
     color: #6c3e0b;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .story-section {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .story-section:nth-child(even) {
@@ -41,28 +41,25 @@
 
 .text-content {
     flex: 1;
-    padding-right: 30px;
+    padding-right: 40px;
 }
 
 .story-section:nth-child(even) .text-content {
     padding-right: 0;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .story-section img {
-    max-width: 40%;
+    max-width: 50%; /* Adjust the image size to be a bit larger */
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    margin-left: 20px;
-    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
     .about h2 {
-        font-size: 32px;
-        text-align: center;
+        font-size: 36px;
     }
 
     .story-section,
@@ -79,7 +76,5 @@
     .story-section img {
         max-width: 100%;
         margin-top: 20px;
-        margin-left: 0;
-        margin-right: 0;
     }
 }

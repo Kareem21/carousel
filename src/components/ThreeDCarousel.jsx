@@ -1,43 +1,59 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/ThreeDCarousel.css';
 
 const ThreeDCarousel = ({ items }) => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const itemAngle = 360 / items.length;
+    const wrapperRef = useRef(null);
+    const [isPaused, setIsPaused] = useState(false);
+    const animationRef = useRef(null);
 
-    const handleNext = () => setActiveIndex((activeIndex + 1) % items.length);
-    const handlePrev = () => setActiveIndex((activeIndex - 1 + items.length) % items.length);
+    useEffect(() => {
+        const totalItems = items.length;
+        const angle = 360 / totalItems;
+        const radius = 400; // Increased radius for more space
 
-    const handleClick = (link) => {
-        window.location.href = link; // Navigates to the corresponding page
+        const slider = wrapperRef.current;
+        slider.style.transform = `rotateY(0deg) translateZ(${-radius}px)`;
+
+        const spanElements = slider.querySelectorAll('span');
+        spanElements.forEach((span, i) => {
+            span.style.transform = `rotateY(${angle * i}deg) translateZ(${radius}px)`;
+        });
+
+        let currentAngle = 0;
+        const animateCarousel = () => {
+            if (!isPaused) {
+                currentAngle -= 0.2; // Slower rotation speed
+                slider.style.transform = `rotateY(${currentAngle}deg) translateZ(${-radius}px)`;
+            }
+            animationRef.current = requestAnimationFrame(animateCarousel);
+        };
+
+        animationRef.current = requestAnimationFrame(animateCarousel);
+
+        return () => {
+            if (animationRef.current) {
+                cancelAnimationFrame(animationRef.current);
+            }
+        };
+    }, [items, isPaused]);
+
+    const togglePause = () => {
+        setIsPaused(!isPaused);
     };
 
     return (
         <div className="carousel-container">
-            <div
-                className="carousel-wrapper"
-                style={{ transform: `rotateY(${activeIndex * -itemAngle}deg)` }}
-            >
+            <div className="slider" ref={wrapperRef}>
                 {items.map((item, index) => (
-                    <div
-                        key={item.name}
-                        className={`carousel-item ${index === activeIndex ? 'is-visible' : ''}`}
-                        style={{
-                            transform: `translate(-50%, -50%) rotateY(${index * itemAngle}deg) translateZ(500px)`,
-                        }}
-                        onClick={() => handleClick(item.link)} // Link is triggered on click
-                    >
-                        <img className="item-image" src={item.image} alt={item.name} />
-                        <span className="item-text">{item.name}</span> {/* Display item name under the image */}
-                    </div>
+                    <span key={index}>
+                        <img src={item.image} alt={item.name} />
+                        <div className="item-text">{item.name}</div>
+                    </span>
                 ))}
             </div>
-            <div className="controls">
-                <button className="control-button" onClick={handlePrev}>
-                    &#10094;
-                </button>
-                <button className="control-button" onClick={handleNext}>
-                    &#10095;
+            <div className="carousel-controls">
+                <button className="pause-play-btn" onClick={togglePause}>
+                    {isPaused ? 'Play' : 'Pause'}
                 </button>
             </div>
         </div>

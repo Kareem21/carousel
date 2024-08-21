@@ -6,7 +6,7 @@ import "@fontsource/playfair-display/600.css"; // Specify weight
 const AboutPage = () => (
     <div className="page-content">
         <div className="about">
-            <div className="content">
+            <div >
                 <h2>The Carousel World Story</h2>
 
                 <div className="story-section">
