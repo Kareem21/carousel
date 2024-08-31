@@ -1,0 +1,119 @@
+.miscellaneous-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.miscellaneous-content {
+    flex-grow: 1;
+    padding: 4rem 2rem; /* Increased top padding for more space below navbar */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.miscellaneous-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--text-color-primary-dark);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.miscellaneous-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--text-color-primary-dark);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    flex: 2;
+}
+
+.category-card {
+    background-color: var(--navy);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: shine 1.5s infinite alternate;
+}
+
+@keyframes shine {
+    from {
+        box-shadow: 0 0 5px rgba(218, 192, 163, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(218, 192, 163, 0.8);
+    }
+}
+
+.category-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--text-color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.category-card p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: var(--text-color-primary);
+    margin-bottom: 1rem;
+}
+
+.category-image {
+    width: 80%;
+    max-width: 150px;
+    height: auto;
+}
+
+.misc-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .misc-image {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}

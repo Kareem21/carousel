@@ -43,7 +43,7 @@ const Events = () => (
             <p>Our carousel animals can be displayed in your commercials, private or public events, or other causes.</p>
             <div className="video-container">
                 {/* Replace with actual video embed code */}
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="LG Vortex - Carousel Commercial 2011" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hQf578gNueg?si=xyBu-GCHiPcln21c" title="LG Vortex - Carousel Commercial 2011" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
         </section>
 

@@ -3,6 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage.jsx'; //
 import AboutPage from './components/AboutPage';
 import Layout from './components/Layout'; //
+import Misc from './components/Misc'; //
+import Dentzel from './components/Dentzel'; //
+
+
+import Collection from './components/Collection'; //
+
 import Events from './components/Events';
 import './styles/App.css';
 
@@ -15,6 +21,9 @@ function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/events" element={<Events />} />
+                    <Route path="/misc" element={<Misc />} />
+                    <Route path="/collection" element={<Collection />} />
+                    <Route path="/Dentzel" element={<Dentzel/>} />
 
                     <Route path="/collection/dentzel" element={<AboutPage />} />
                     <Route path="/collection/stein-and-goldstein" element={<AboutPage />} />
