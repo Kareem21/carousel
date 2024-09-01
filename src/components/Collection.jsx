@@ -5,9 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../styles/Collection.css';
 
 const collectionItems = [
-    { id: 'dentzel', title: 'Dentzel', description: 'Our Animals that are carved by Dentzel', image: '/Dentzel/D1.png' },
-    { id: 'steinAndGoldstein', title: 'Stein and Goldstein', description: 'Our Animals that are carved by Stein and Goldstein', image: '/SteinAndGoldstein/S1.png' },
+    { id: 'dentzel', title: 'Dentzel', description: 'Our Animals that are carved by Dentzel', image: '/Dentzel/test/D1.png' },
+    { id: 'steinAndGoldstein', title: 'Stein and Goldstein', description: 'Our Animals that are carved by Stein and Goldstein', image: '/Stein/S1.png' },
     { id: 'looff', title: 'Looff', description: '19th Century heavy carved wood plaque figures', image: '/Looff/L1.png' },
+    { id: 'illions', title: 'Illions', description: '19th Century heavy carved wood plaque figures', image: '/illions/L1.png' },
     { id: 'carmel', title: 'Carmel', description: 'Our Animals that are carved by Carmel', image: '/Carmel/C1.png' },
     { id: 'mueller', title: 'Mueller', description: 'Our collection includes sports memorabilia, coming soon.', image: '/Mueller/M1.png' },
     { id: 'parker', title: 'Parker', description: 'Our Animals that are carved by Parker', image: '/Parker/P1.png' },

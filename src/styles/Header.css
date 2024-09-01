@@ -4,6 +4,8 @@
     background-color: #00274d;
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the navbar is on top */
+    position: relative; /* To make z-index work */
 }
 
 .navbar-container {
@@ -14,6 +16,8 @@
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 .navbar-left {
@@ -35,6 +39,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    z-index: 1000; /* Ensure the menu is on top */
 }
 
 .navbar-item {
@@ -139,10 +144,12 @@
         right: 0;
         background-color: #00274d;
         padding: 20px;
+        z-index: 1000;
     }
 
     .navbar-menu.active {
         display: flex;
+        margin-top: 60px; /* Push down the content */
     }
 
     .navbar-item {
@@ -162,6 +169,7 @@
         box-shadow: none;
     }
 }
+
 .full-width-carousel {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
