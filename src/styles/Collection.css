@@ -229,3 +229,11 @@
      color: inherit;
      display: block;
  }
+.order-banner {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+}

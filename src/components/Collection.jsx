@@ -34,6 +34,9 @@ const timelineEvents = [
 
 const Collection = () => (
     <div className="collection-page">
+        <div className="order-banner">
+            TO PLACE AN ORDER PLEASE CONTACT US AT OUR NUMBER HERE
+        </div>
         <main className="collection-content">
             <h1 className="collection-title">Our Full Collection</h1>
             <p className="collection-subtitle">Explore our vintage Carousel horse collection.</p>
@@ -46,7 +49,7 @@ const Collection = () => (
                             <div className="booth-content">
                                 <h2>{item.title}</h2>
                                 <p>{item.description}</p>
-                                <img src={item.image} alt={item.title} className="booth-image" />
+                                <img src={item.image} alt={item.title} className="booth-image"/>
                             </div>
                         </div>
                     </Link>
@@ -55,7 +58,8 @@ const Collection = () => (
 
             <section className="testimonials-section">
                 <h2>What Our Visitors Say</h2>
-                <Carousel showArrows={true} infiniteLoop={true} showThumbs={false} showStatus={false} className="testimonial-carousel">
+                <Carousel showArrows={true} infiniteLoop={true} showThumbs={false} showStatus={false}
+                          className="testimonial-carousel">
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="testimonial-ticket">
                             <p>"{testimonial.text}"</p>

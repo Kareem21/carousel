@@ -48,10 +48,6 @@ const carouselItems = [
 ];
 const HomePage = () => (
     <div className="page-content">
-        <div className="banner">
-            <p className="banner-text">Carousel World - a fine art collection</p>
-            <button className="banner-close">✕</button>
-        </div>
         <div className="home-container">
             <section className="hero-section">
                 <h1 className="hero-title">A Fine Art Collection</h1>
