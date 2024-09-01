@@ -35,7 +35,7 @@ const timelineEvents = [
 const Collection = () => (
     <div className="collection-page">
         <div className="order-banner">
-            TO PLACE AN ORDER PLEASE CONTACT US AT OUR NUMBER HERE
+            TO PLACE AN ORDER PLEASE CONTACT US HERE
         </div>
         <main className="collection-content">
             <h1 className="collection-title">Our Full Collection</h1>
