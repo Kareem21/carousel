@@ -123,3 +123,65 @@
         grid-template-columns: 1fr; /* Adjust to 1 card per row on very small screens */
     }
 }
+.horse-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 cards per row */
+    gap: 2.5rem; /* Increase spacing between the cards */
+    padding: 1rem; /* Add padding around the grid */
+    justify-items: center; /* Center the cards within the grid */
+}
+
+.horse-card {
+    background-color: #fff;
+    border: 3px solid #8b0000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensure the card takes full width of its grid column */
+    max-width: 280px; /* Set a maximum width for consistency */
+}
+
+.horse-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.horse-image {
+    width: 100%;
+    height: auto; /* Make sure the image maintains its aspect ratio */
+    object-fit: contain; /* Ensures the entire image is visible within its container */
+}
+
+.horse-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #8b0000;
+    margin: 1rem;
+}
+
+.horse-card p {
+    margin: 0 1rem 1rem;
+    color: #5c3d2e;
+}
+
+.horse-price {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #8b0000;
+}
+
+.inquire-button {
+    display: block;
+    background-color: #8b0000;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.inquire-button:hover {
+    background-color: #5c0000;
+}
