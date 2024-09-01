@@ -5,15 +5,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../styles/Collection.css';
 
 const collectionItems = [
-    { id: 'dentzel', title: 'Dentzel', description: 'Our Animals that are carved by Dentzel', image: '../../public/Dentzel/D1.png' },
-    { id: 'steinAndGoldstein', title: 'Stein and Goldstein', description: 'Our Animals that are carved by Stein and Goldstein', image: '/path/to/carousel-image.jpg' },
-    { id: 'looff', title: 'Looff', description: '19th Century heavy carved wood plaque figures', image: '/path/to/carousel-image.jpg' },
-    { id: 'carmel', title: 'Carmel', description: 'Our Animals that are carved by Carmel', image: '/path/to/carousel-image.jpg' },
-    { id: 'mueller', title: 'Mueller', description: 'Our collection includes sports memorabilia, coming soon.', image: '/path/to/carousel-image.jpg' },
-    { id: 'parker', title: 'Parker', description: 'Our Animals that are carved by Parker', image: '/path/to/carousel-image.jpg' },
-    { id: 'ptc', title: 'PTC', description: 'Our Animals that are carved by PTC', image: '/path/to/carousel-image.jpg' },
-    { id: 'herschellSpillman', title: 'Herschell Spillman', description: 'Our Animals that are carved by Herschell Spillman', image: '/path/to/carousel-image.jpg' },
+    { id: 'dentzel', title: 'Dentzel', description: 'Our Animals that are carved by Dentzel', image: '/Dentzel/D1.png' },
+    { id: 'steinAndGoldstein', title: 'Stein and Goldstein', description: 'Our Animals that are carved by Stein and Goldstein', image: '/SteinAndGoldstein/S1.png' },
+    { id: 'looff', title: 'Looff', description: '19th Century heavy carved wood plaque figures', image: '/Looff/L1.png' },
+    { id: 'carmel', title: 'Carmel', description: 'Our Animals that are carved by Carmel', image: '/Carmel/C1.png' },
+    { id: 'mueller', title: 'Mueller', description: 'Our collection includes sports memorabilia, coming soon.', image: '/Mueller/M1.png' },
+    { id: 'parker', title: 'Parker', description: 'Our Animals that are carved by Parker', image: '/Parker/P1.png' },
+    { id: 'ptc', title: 'PTC', description: 'Our Animals that are carved by PTC', image: '/PTC/PTC1.png' },
+    { id: 'herschellSpillman', title: 'Herschell Spillman', description: 'Our Animals that are carved by Herschell Spillman', image: '/HerschellSpillman/HS1.png' },
 ];
+
 
 const testimonials = [
     { text: "The Steyen collection is truly magnificent!", author: "John Doe" },
