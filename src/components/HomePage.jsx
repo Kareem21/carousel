@@ -4,6 +4,7 @@ import "@fontsource/great-vibes";
 import CarouselFlow from '../components/CarouselFlow';
 import ThreeDCarousel from "./ThreeDCarousel.jsx";
 import {Carousel} from "react-responsive-carousel";
+import { motion } from 'framer-motion';
 
 const timelineEvents = [
     { year: 1972, event: "Charlotte Dinger makes her first purchase of a carousel horse from an antique store in Philadelphia." },
@@ -60,6 +61,17 @@ const HomePage = () => (
                 <p className="tagline">Each item on our site is one of one.</p>
             </section>
 
+            <section className="timeline-section">
+                <h2>The Legacy of Charlotte Dinger</h2>
+                <div className="timeline">
+                    {timelineEvents.map((event, index) => (
+                        <div key={index} className="timeline-event">
+                            <div className="timeline-year">{event.year}</div>
+                            <div className="timeline-description">{event.event}</div>
+                        </div>
+                    ))}
+                </div>
+            </section>
             <section className="testimonials-section">
                 <h2>What Our Visitors Say</h2>
                 <Carousel

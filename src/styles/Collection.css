@@ -224,4 +224,8 @@
     .timeline-event:nth-child(odd)::after {
         left: 15px;
     }
-}
+}.carnival-booth-link {
+     text-decoration: none;
+     color: inherit;
+     display: block;
+ }

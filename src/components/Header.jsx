@@ -35,17 +35,7 @@ const Navbar = () => {
                             <Link to="/collection" className="navbar-link">
                                 Collection
                             </Link>
-                            <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-                                <li className="dropdown-item"><Link to="/dentzel">Dentzel</Link></li>
-                                <li className="dropdown-item"><Link to="/stein-and-goldstein">Stein and Goldstein</Link></li>
-                                <li className="dropdown-item"><Link to="/looff">Looff</Link></li>
-                                <li className="dropdown-item"><Link to="/illions">Illions</Link></li>
-                                <li className="dropdown-item"><Link to="/carmel">Carmel</Link></li>
-                                <li className="dropdown-item"><Link to="/parker">Parker</Link></li>
-                                <li className="dropdown-item"><Link to="/ptc">PTC</Link></li>
-                                <li className="dropdown-item"><Link to="/herschell-spillman">Herschell Spillman</Link></li>
-                                <li className="dropdown-item"><Link to="/other">Other Carvers</Link></li>
-                            </ul>
+
                         </li>
                         <li className="navbar-item">
                             <Link to="/misc" className="navbar-link">Miscellaneous</Link>
@@ -65,7 +55,7 @@ const Navbar = () => {
                     </div>
                     <Link to="/book" className="navbar-book">
                         <Calendar size={20} />
-                        <span>Email an order</span>
+                        <span>Place an order</span>
                     </Link>
                 </div>
                 <button className="navbar-toggle" onClick={toggleMenu}>

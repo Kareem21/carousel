@@ -1,19 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Header from './Header';
 import '../styles/Collection.css';
 
 const collectionItems = [
-    { title: 'Dentzel', description: 'Our Animals that are carved by Dentzel', image: '/path/to/carousel-image.jpg' },
-    { title: 'Stein and Goldstein', description: 'Our Animals that are carved by Dentzel', image: '/path/to/carousel-image.jpg' },
-    { title: 'Looff', description: '19th Century heavy carved wood plaque figures', image: '/path/to/carousel-image.jpg' },
-    { title: 'Carmel', description: 'Our Animals that are carved by Dentzel', image: '/path/to/carousel-image.jpg' },
-    { title: 'Mueller', description: 'Our collection includes sports memorabilia, coming soon.', image: '/path/to/carousel-image.jpg' },
-    { title: 'Parker', description: 'Our Animals that are carved by Dentzel', image: '/path/to/carousel-image.jpg' },
-    { title: 'PTC', description: 'Our Animals that are carved by Dentzel', image: '/path/to/carousel-image.jpg' },
-    { title: 'Herschell Spillman', description: 'Our Animals that are carved by Dentzel', image: '/path/to/carousel-image.jpg' },
-
+    { id: 'dentzel', title: 'Dentzel', description: 'Our Animals that are carved by Dentzel', image: '../../public/Dentzel/D1.png' },
+    { id: 'steinAndGoldstein', title: 'Stein and Goldstein', description: 'Our Animals that are carved by Stein and Goldstein', image: '/path/to/carousel-image.jpg' },
+    { id: 'looff', title: 'Looff', description: '19th Century heavy carved wood plaque figures', image: '/path/to/carousel-image.jpg' },
+    { id: 'carmel', title: 'Carmel', description: 'Our Animals that are carved by Carmel', image: '/path/to/carousel-image.jpg' },
+    { id: 'mueller', title: 'Mueller', description: 'Our collection includes sports memorabilia, coming soon.', image: '/path/to/carousel-image.jpg' },
+    { id: 'parker', title: 'Parker', description: 'Our Animals that are carved by Parker', image: '/path/to/carousel-image.jpg' },
+    { id: 'ptc', title: 'PTC', description: 'Our Animals that are carved by PTC', image: '/path/to/carousel-image.jpg' },
+    { id: 'herschellSpillman', title: 'Herschell Spillman', description: 'Our Animals that are carved by Herschell Spillman', image: '/path/to/carousel-image.jpg' },
 ];
 
 const testimonials = [
@@ -39,14 +38,16 @@ const Collection = () => (
 
             <div className="carnival-booths">
                 {collectionItems.map((item, index) => (
-                    <div key={index} className="carnival-booth">
-                        <div className="booth-awning"></div>
-                        <div className="booth-content">
-                            <h2>{item.title}</h2>
-                            <p>{item.description}</p>
-                            <img src={item.image} alt={item.title} className="booth-image" />
+                    <Link to={`/${item.id}`} key={index} className="carnival-booth-link">
+                        <div className="carnival-booth">
+                            <div className="booth-awning"></div>
+                            <div className="booth-content">
+                                <h2>{item.title}</h2>
+                                <p>{item.description}</p>
+                                <img src={item.image} alt={item.title} className="booth-image" />
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
 

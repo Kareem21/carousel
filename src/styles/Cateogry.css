@@ -8,9 +8,13 @@
 .maker-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #8b0000;
+    color: var(--text-color-primary-dark);
     text-align: center;
     margin-bottom: 2rem;
+}
+.maker-text{
+    color: var(--text-color-primary-dark);
+
 }
 
 .maker-content {
@@ -57,6 +61,7 @@
 }
 
 .horse-price {
+    font-family: 'Playfair Display', serif;
     font-weight: bold;
     color: #8b0000;
 }

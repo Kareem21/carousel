@@ -4,7 +4,7 @@ import HomePage from './components/HomePage.jsx'; //
 import AboutPage from './components/AboutPage';
 import Layout from './components/Layout'; //
 import Misc from './components/Misc'; //
-import Dentzel from './components/Dentzel'; //
+import Dentzel from './Shop/Dentzel.jsx'; //
 
 
 import Collection from './components/Collection'; //

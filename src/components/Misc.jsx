@@ -16,7 +16,6 @@ const categories = [
 
 const Miscellaneous = () => (
     <div className="miscellaneous-page light-bg">
-        <Header />
         <main className="miscellaneous-content">
             <h1 className="miscellaneous-title">Miscellaneous Antiques for your collection.</h1>
             <p className="miscellaneous-subtitle">Our collection includes miscellaneous collections like our beautiful
