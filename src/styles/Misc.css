@@ -41,7 +41,7 @@
 }
 
 .category-card {
-    background-color: var(--navy);
+    background-color: black;
     border-radius: 8px;
     padding: 1.5rem;
     display: flex;

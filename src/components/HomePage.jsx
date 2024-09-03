@@ -37,7 +37,7 @@ const HomePage = () => (
                     </div>
                     <a href="/collection" className="banner-link">View our full collection here</a>
                 </section>
-            </div>
+            </div>m
 
             <section className="tagline-section">
                 <p className="tagline">Each item on our site is one of one.</p>
