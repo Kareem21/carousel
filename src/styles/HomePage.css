@@ -437,6 +437,7 @@
 .banner-section {
     max-width: 1200px; /* or whatever max-width you want for the content */
     margin: 0 auto;
+    margni-top: 0;
     padding: 60px 20px;
     text-align: center;
 }

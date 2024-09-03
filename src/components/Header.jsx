@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone, Calendar } from 'lucide-react';
 import '../styles/Header.css';
@@ -6,6 +6,7 @@ import '../styles/Header.css';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -15,8 +16,26 @@ const Navbar = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
+    // Close the menu when clicking outside of it
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                closeMenu();
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
-        <nav className="navbar">
+        <nav className="navbar" ref={menuRef}>
             <div className="navbar-container">
                 <div className="navbar-left">
                     <Link to="/" className="navbar-logo">
@@ -58,7 +77,6 @@ const Navbar = () => {
                     </Link>
                 </div >
 
-                <Link to="/collection" className="mobile-collection-btn">COLLECTION</Link>
                 <button className="navbar-toggle" onClick={toggleMenu}>
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>

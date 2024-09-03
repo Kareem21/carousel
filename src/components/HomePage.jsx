@@ -35,6 +35,7 @@ const HomePage = () => (
                             <img src={item.image} alt={item.name} key={index} className="banner-image" />
                         ))}
                     </div>
+                    <h2 className="banner-title">Browse our full collection..</h2>
                     <a href="/collection" className="banner-link">View our full collection here</a>
                 </section>
             </div>
