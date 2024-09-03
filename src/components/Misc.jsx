@@ -20,7 +20,6 @@ const Miscellaneous = () => (
             <h1 className="miscellaneous-title">Miscellaneous Antiques for your collection.</h1>
             <p className="miscellaneous-subtitle">Our collection includes miscellaneous collections like our beautiful
                 figures as well as sports memorabilia</p>
-            <img src="../../public/misc.png" alt="Miscellaneous antiques" className="misc-image"/>
 
             <div className="content-wrapper">
                 <div className="category-grid">

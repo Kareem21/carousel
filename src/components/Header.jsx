@@ -35,7 +35,6 @@ const Navbar = () => {
                             <Link to="/collection" className="navbar-link">
                                 Collection
                             </Link>
-
                         </li>
                         <li className="navbar-item">
                             <Link to="/misc" className="navbar-link">Miscellaneous</Link>
@@ -53,11 +52,13 @@ const Navbar = () => {
                         <Phone size={20} />
                         <span>(514) 358-5519</span>
                     </div>
-                    <Link to="/book" className="navbar-book">
+                    <Link to="/Contact" className="navbar-book">
                         <Calendar size={20} />
                         <span>Place an order</span>
                     </Link>
-                </div>
+                </div >
+
+                <Link to="/collection" className="mobile-collection-btn">COLLECTION</Link>
                 <button className="navbar-toggle" onClick={toggleMenu}>
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>

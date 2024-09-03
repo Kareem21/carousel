@@ -44,7 +44,7 @@ const Collection = () => (
         </div>
         <main className="collection-content">
             <h1 className="collection-title">Our Full Collection</h1>
-            <p className="collection-subtitle">Explore our vintage Carousel horse collection.</p>
+            <p className="collection-subtitle">Explore our vintage Carousel animal collection.</p>
 
             <div className="carnival-booths">
                 {collectionItems.map((item, index) => (
@@ -61,30 +61,9 @@ const Collection = () => (
                 ))}
             </div>
 
-            <section className="testimonials-section">
-                <h2>What Our Visitors Say</h2>
-                <Carousel showArrows={true} infiniteLoop={true} showThumbs={false} showStatus={false}
-                          className="testimonial-carousel">
-                    {testimonials.map((testimonial, index) => (
-                        <div key={index} className="testimonial-ticket">
-                            <p>"{testimonial.text}"</p>
-                            <p className="testimonial-author">- {testimonial.author}</p>
-                        </div>
-                    ))}
-                </Carousel>
-            </section>
 
-            <section className="timeline-section">
-                <h2>The Magical History of Steyen Carousels</h2>
-                <div className="timeline">
-                    {timelineEvents.map((event, index) => (
-                        <div key={index} className="timeline-event">
-                            <div className="timeline-year">{event.year}</div>
-                            <div className="timeline-description">{event.event}</div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+
+
         </main>
     </div>
 );

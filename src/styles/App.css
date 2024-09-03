@@ -29,11 +29,18 @@ body {
     min-height: 100vh;
 }
 
-.page-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px 0;
+body, #root {
     overflow-x: hidden;
+    width: 100%;
+}
+
+.page-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0; /* Remove horizontal padding */
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -102,6 +109,7 @@ img {
     align-items: center;
     gap: 10px;
 }
+
 
 .order-button {
     background-color: #dac0a3;

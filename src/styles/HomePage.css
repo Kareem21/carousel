@@ -220,3 +220,231 @@
 .banner-close:hover {
     color: #fff;
 }
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.card {
+    width: 48%;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us-card {
+    background-color: var(--navy);
+    color: var(--text-color-primary);
+}
+
+.shop-card {
+    background-color: var(--text-color-primary);
+    color: var(--text-color-primary-dark);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.portraits {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.portrait {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--text-color-primary);
+    margin: 0 0.5rem;
+}
+
+.shop-icon {
+    width: 100px;
+    height: 100px;
+    background-image: url('path-to-your-shop-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-us-button, .shop-button {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid currentColor;
+    background: none;
+    color: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about-us-button:hover {
+    background-color: var(--text-color-primary);
+    color: var(--navy);
+}
+
+.shop-button:hover {
+    background-color: var(--text-color-primary-dark);
+    color: var(--text-color-primary);
+}
+
+.home-container {
+    max-width: 1200px; /* or whatever max-width you want for the main content */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.banner-text-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px; /* or whatever max-width you want for the content */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner-title {
+    font-size: 3rem;
+    color: #dac0a3;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.banner-image {
+    max-width: 200px;
+    max-height: 200px;
+    flex-shrink: 0; /* Prevent images from shrinking */
+    animation: bounce 2s ease-in-out infinite; /* Add bounce animation */
+}
+
+
+.banner-link {
+    font-size: 1.5rem;
+    color: #dac0a3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner-link:hover {
+    color: #ffffff;
+}
+.full-width-banner {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: black;
+}
+/* Banner and Carousel Styles */
+.full-width-banner {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: black;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.banner-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    animation: scroll 20s linear infinite; /* Add animation for scrolling */
+}
+
+.banner-image {
+    max-width: 200px;
+    max-height: 200px;
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.banner-title {
+    font-size: 3rem;
+    color: #dac0a3;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.banner-link {
+    font-size: 1.5rem;
+    color: #dac0a3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner-link:hover {
+    color: #ffffff;
+}
+
+/* Keyframes for the scroll animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banner-image {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-link {
+        font-size: 1.2rem;
+    }
+}
+
+.banner-section {
+    max-width: 1200px; /* or whatever max-width you want for the content */
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 3rem;
+    color: #dac0a3;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}

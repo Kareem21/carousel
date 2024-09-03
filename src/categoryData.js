@@ -28,6 +28,7 @@ export const categories = {
             { name: "S&G Lion", description: "Majestic lion figure with flowing mane", price: 22000, image: "/path/to/sg-lion.jpg" },
         ]
     },
+
     looff: {
         name: "Looff",
         description: "Stein and Goldstein carousel figures are known for their bold, expressive features and dynamic poses.",

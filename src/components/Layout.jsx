@@ -4,9 +4,9 @@ import Footer from './Footer.jsx';
 
 const Layout = ({ children }) => {
     return (
-        <div>
+        <div style={{ width: '100%', overflow: 'hidden' }}>
             <Header />
-            <main>{children}</main>
+            <main style={{ width: '100%' }}>{children}</main>
             <Footer />
         </div>
     );

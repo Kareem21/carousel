@@ -7,6 +7,7 @@ import Misc from './components/Misc';
 import Dentzel from './Shop/Dentzel.jsx';
 import Collection from './components/Collection';
 import Foreign from './Shop/Foreign.jsx';
+import Contact from './components/Contact.jsx';
 
 import Events from './components/Events';
 import ScrollToTop from './components/ScrollToTop'; // Import the new component
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/collection" element={<Collection />} />
                     <Route path="/Dentzel" element={<Dentzel/>} />
                     <Route path="/Foreign" element={<Foreign/>} />
+                    <Route path="/contact" element={<Contact/>} />
 
                     <Route path="/collection/dentzel" element={<AboutPage />} />
                     <Route path="/collection/stein-and-goldstein" element={<AboutPage />} />

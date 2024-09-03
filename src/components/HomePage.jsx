@@ -1,20 +1,17 @@
 import React from 'react';
 import '../styles/HomePage.css';
 import "@fontsource/great-vibes";
-import CarouselFlow from '../components/CarouselFlow';
-import ThreeDCarousel from "./ThreeDCarousel.jsx";
-import {Carousel} from "react-responsive-carousel";
-import { motion } from 'framer-motion';
-import StarIcon from '@mui/icons-material/Star'; // Add this import
-
-
-
+import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
+import StarIcon from '@mui/icons-material/Star';
 
 const testimonials = [
-    { text: "This collection SLAPSSSS FR FR ", author: "Chriss P.Ratt", rating: 5 },
+    { text: "This collection SLAPSSSS FR FR ", author: "Shelby", rating: 5 },
     { text: " ANTIQUECAROUSELS.COM COULD NEVER ", author: "Mike hawk", rating: 5 },
     { text: "I LOVE BIG CAROUSELS AND I CANNOT LIE", author: "Julius Seizure", rating: 5 },
+    { text: "Muellers #1 FAN!!!!! ugh hes so good  ", author: "MUellerlover32", rating: 5 },
+
 ];
+
 const carouselItems = [
     { name: 'Randomname', image: '/Dentzel/D1.png' },
     { name: 'Foreign', image: '/Dentzel/D3(1).png' },
@@ -23,14 +20,27 @@ const carouselItems = [
     { name: 'tesvccvfg', image: '/Dentzel/D7.png' },
     { name: 'daf', image: '/Dentzel/D9.png' },
     { name: 'tesvccvfg', image: '/Dentzel/D7.png' },
-
 ];
+
 const HomePage = () => (
     <div className="page-content">
-
         <div className="home-container">
-            <section className="hero-section">
-                <h1 className="hero-title">A Fine Art Collection</h1>
+            <div className="full-width-banner">
+                <section className="banner-section">
+                    <div className="banner-text-container">
+                        <h2 className="banner-title">Vintage Carousel Horses, Antiques, Paintings.</h2>
+                    </div>
+                    <div className="banner">
+                        {carouselItems.map((item, index) => (
+                            <img src={item.image} alt={item.name} key={index} className="banner-image" />
+                        ))}
+                    </div>
+                    <a href="/collection" className="banner-link">View our full collection here</a>
+                </section>
+            </div>
+
+            <section className="tagline-section">
+                <p className="tagline">Each item on our site is one of one.</p>
             </section>
 
             <section className="content">
@@ -45,12 +55,32 @@ const HomePage = () => (
                         generations...
                     </p>
                     <p className="content-paragraph">
-                        Every item tells a story of unparalleled craftsmanship, artistic vision, and the joyous spirit
-                        of generations past...
+                        Every item tells a story of unparalleled craftsmanship, artistic vision, and the joyous
+                        spirit of generations past...
                     </p>
                 </div>
                 <a href="/collection" className="cta-button">Explore Our Curated Collection</a>
             </section>
+
+            <section className="cards-section">
+                <div className="card about-us-card">
+                    <h2>ABOUT US</h2>
+                    <h3>GET TO KNOW US</h3>
+                    <div className="portraits">
+                        <div className="portrait"></div>
+                        <div className="portrait"></div>
+                        <div className="portrait"></div>
+                    </div>
+                    <button className="about-us-button">ABOUT US</button>
+                </div>
+                <div className="card shop-card">
+                    <h2>SHOP</h2>
+                    <h3>GO HAVE A LOOK</h3>
+                    <img src={"http://whatsintheoldbox.com/images/wallet-global.svg"} alt="Shop Icon" />
+                    <button className="shop-button">Our Collection</button>
+                </div>
+            </section>
+
             <section className="testimonials-section">
                 <h2>What Our Visitors Say</h2>
                 <Carousel
@@ -64,8 +94,7 @@ const HomePage = () => (
                         <div key={index} className="testimonial-ticket">
                             <div className="testimonial-rating">
                                 {[...Array(5)].map((_, i) => (
-                                    <StarIcon key={i}
-                                              className={i < testimonial.rating ? 'star-filled' : 'star-empty'}/>
+                                    <StarIcon key={i} className={i < testimonial.rating ? 'star-filled' : 'star-empty'} />
                                 ))}
                             </div>
                             <p>"{testimonial.text}"</p>
@@ -74,31 +103,22 @@ const HomePage = () => (
                     ))}
                 </Carousel>
             </section>
-            <section className="carousel-section">
-                <CarouselFlow imageData={carouselItems.map(item => item.image)}/>
-            </section>
-
-            <section className="tagline-section">
-                <p className="tagline">Each item on our site is one of one.</p>
-            </section>
-
-
 
             <section className="carvers-section">
                 <h2 className="carvers-heading">Our carousel animals are masterfully crafted by the world's most
                     renowned artisans</h2>
                 <div className="carvers-links">
-                    <a href="/carvers/loof">Charles I.D. Loof</a>
-                    <a href="/carvers/spillman">Herschell Spillman Co.</a>
-                    <a href="/carvers/mueller">Mueller Brothers</a>
-                    <a href="/carvers/dentzel">Dentzel</a>
-                    <a href="/carvers/foreign">International Masters</a>
+                    <span>Charles I.D. Loof</span>
+                    <span>Herschell Spillman Co.</span>
+                    <span>Mueller Brothers</span>
+                    <span>Dentzel</span>
+                    <span>International Masters</span>
                 </div>
                 <div className="carvers-images">
-                    <img src="../../public/Aboutus/carvers2.jpg" alt="Master Carver 1"/>
-                    <img src="../../public/Aboutus/carvers3.jpg" alt="Master Carver 2"/>
-                    <img src="../../public/Aboutus/carouselrandom.jpg" alt="Master Carver 3"/>
-                    <img src="../../public/Aboutus/carvers2.jpg" alt="Master Carver 4"/>
+                    <img src="/Aboutus/carvers2.jpg" alt="Master Carver 1" />
+                    <img src="/Aboutus/carvers3.jpg" alt="Master Carver 2" />
+                    <img src="/Aboutus/carouselrandom.jpg" alt="Master Carver 3" />
+                    <img src="/Aboutus/carvers2.jpg" alt="Master Carver 4" />
                 </div>
             </section>
         </div>
