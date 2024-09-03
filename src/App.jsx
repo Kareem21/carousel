@@ -1,21 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './components/HomePage.jsx'; //
+import HomePage from './components/HomePage.jsx';
 import AboutPage from './components/AboutPage';
-import Layout from './components/Layout'; //
-import Misc from './components/Misc'; //
-import Dentzel from './Shop/Dentzel.jsx'; //
-
-
-import Collection from './components/Collection'; //
+import Layout from './components/Layout';
+import Misc from './components/Misc';
+import Dentzel from './Shop/Dentzel.jsx';
+import Collection from './components/Collection';
+import Foreign from './Shop/Foreign.jsx';
 
 import Events from './components/Events';
+import ScrollToTop from './components/ScrollToTop'; // Import the new component
 import './styles/App.css';
-
 
 function App() {
     return (
         <Router>
+            <ScrollToTop /> {/* Add this line */}
             <Layout>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
@@ -24,9 +24,12 @@ function App() {
                     <Route path="/misc" element={<Misc />} />
                     <Route path="/collection" element={<Collection />} />
                     <Route path="/Dentzel" element={<Dentzel/>} />
+                    <Route path="/Foreign" element={<Foreign/>} />
 
                     <Route path="/collection/dentzel" element={<AboutPage />} />
                     <Route path="/collection/stein-and-goldstein" element={<AboutPage />} />
+                    <Route path="/collection/dentzel" element={<AboutPage />} />
+
                     {/* Add more routes as needed */}
                 </Routes>
             </Layout>

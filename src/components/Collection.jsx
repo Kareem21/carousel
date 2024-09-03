@@ -35,7 +35,12 @@ const timelineEvents = [
 const Collection = () => (
     <div className="collection-page">
         <div className="order-banner">
-            TO PLACE AN ORDER PLEASE CONTACT US HERE
+            TO PLACE AN ORDER PLEASE CONTACT US HERE <button className="order-button">
+            <Link to="/contact" style={{textDecoration: 'none', color: 'inherit'}}>
+                Order here
+            </Link>
+        </button>
+
         </div>
         <main className="collection-content">
             <h1 className="collection-title">Our Full Collection</h1>

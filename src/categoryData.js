@@ -76,7 +76,17 @@ export const categories = {
             { name: "S&G Lion", description: "Majestic lion figure with flowing mane", price: 22000, image: "/path/to/sg-lion.jpg" },
         ]
     },
-
+    foreign: {
+        name: "Foreign ",
+        description: "Items made by foreign carvers.",
+        items: [
+            { name: "S&G Chariot", description: "Ornate chariot with detailed carvings", price: 25000, image: "/path/to/sg-chariot.jpg" },
+            { name: "S&G Lion", description: "Majestic lion figure with flowing mane", price: 22000, image: "/path/to/sg-lion.jpg" },
+            { name: "S&G Lion", description: "Majestic lion figure with flowing mane", price: 22000, image: "/path/to/sg-lion.jpg" },
+            { name: "S&G Lion", description: "Majestic lion figure with flowing mane", price: 22000, image: "/path/to/sg-lion.jpg" },
+            { name: "S&G Lion", description: "Majestic lion figure with flowing mane", price: 22000, image: "/path/to/sg-lion.jpg" },
+        ]
+    }
 
     // Add more categories here...
 };

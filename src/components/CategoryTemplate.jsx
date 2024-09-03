@@ -9,9 +9,14 @@ const CategoryTemplate = ({ category }) => {
 
     return (
         <div className="page-wrapper">
-            <div className="order-banner">
-                TO PLACE AN ORDER PLEASE CONTACT US HERE
-            </div>
+                <div className="order-banner">
+                    TO PLACE AN ORDER PLEASE CONTACT US HERE:
+                    <button className="order-button">
+                        <Link to="/contact" style={{textDecoration: 'none', color: 'inherit'}}>
+                            Order here
+                        </Link>
+                    </button>
+                </div>
             <div className="maker-page">
                 <h1 className="maker-title">Carved By {category.name}</h1>
                 <h3>{category.description}</h3>

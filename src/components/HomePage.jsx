@@ -83,9 +83,7 @@ const HomePage = () => (
             </section>
 
 
-            <div>
-                <ThreeDCarousel items={carouselItems}/>
-            </div>
+
             <section className="carvers-section">
                 <h2 className="carvers-heading">Our carousel animals are masterfully crafted by the world's most
                     renowned artisans</h2>
