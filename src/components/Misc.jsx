@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Header'; // Assuming you have a Header component
 import Footer from './Footer'; // Assuming you have a Footer component
-import '../styles/Misc.css'; // We'll create this CSS file for styling
+import '../styles/Misc.css';
+import {Link} from "react-router-dom"; // We'll create this CSS file for styling
 
 
 
@@ -16,6 +17,14 @@ const categories = [
 
 const Miscellaneous = () => (
     <div className="miscellaneous-page light-bg">
+        <div className="order-banner">
+            TO PLACE AN ORDER PLEASE CONTACT US HERE:
+            <button className="order-button">
+                <Link to="/contact" style={{textDecoration: 'none', color: 'inherit'}}>
+                    Order here
+                </Link>
+            </button>
+        </div>
         <main className="miscellaneous-content">
             <h1 className="miscellaneous-title">Miscellaneous Antiques for your collection.</h1>
             <p className="miscellaneous-subtitle">Our collection includes miscellaneous collections like our beautiful

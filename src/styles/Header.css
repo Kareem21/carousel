@@ -186,3 +186,10 @@
         margin-left: 15px;
     }
 }
+.navbar {
+    background-color: #00274d;
+    padding: 10px 0; /* Reduced padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: relative; /* You can also try sticky or fixed */
+}

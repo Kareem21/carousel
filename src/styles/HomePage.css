@@ -1,6 +1,6 @@
 .hero-section {
     text-align: center;
-    padding: 60px 0;
+    padding: 0 0 60px;
 }
 
 .hero-title {
@@ -135,7 +135,8 @@
 
 .testimonials-section {
     margin-top: 4rem;
-    padding: 0 1rem; /* Added padding for better mobile view */
+    padding: 0 1rem;
+    overflow: hidden; /* Prevent unexpected scroll */
 }
 
 .testimonials-section h2 {
@@ -224,6 +225,7 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
+    gap: 2rem; /* Add gap between the cards */
 }
 
 .card {
@@ -243,7 +245,7 @@
 
 .shop-card {
     background-color: var(--text-color-primary);
-    color: var(--text-color-primary-dark);
+    color: var(--text-color-primary);
 }
 
 .card h2 {
@@ -273,7 +275,6 @@
 .shop-icon {
     width: 100px;
     height: 100px;
-    background-image: url('path-to-your-shop-icon.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -289,7 +290,17 @@
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+@media (max-width: 768px) {
+    .cards-section {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center;    /* Center the cards */
+    }
 
+    .card {
+        width: 100%; /* Make the cards take full width on mobile */
+        margin-bottom: 1rem; /* Add space between the stacked cards */
+    }
+}
 .about-us-button:hover {
     background-color: var(--text-color-primary);
     color: var(--navy);
@@ -437,7 +448,6 @@
 .banner-section {
     max-width: 1200px; /* or whatever max-width you want for the content */
     margin: 0 auto;
-    margni-top: 0;
     padding: 60px 20px;
     text-align: center;
 }
