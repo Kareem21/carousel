@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, Phone, Calendar } from 'lucide-react';
 import '../styles/Header.css';
 
@@ -7,6 +7,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const menuRef = useRef(null);
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -18,6 +19,12 @@ const Navbar = () => {
 
     const closeMenu = () => {
         setIsMenuOpen(false);
+    };
+
+    // New function to handle navigation and menu closing
+    const handleNavigation = (path) => {
+        closeMenu();
+        navigate(path);
     };
 
     // Close the menu when clicking outside of it
@@ -38,31 +45,31 @@ const Navbar = () => {
         <nav className="navbar" ref={menuRef}>
             <div className="navbar-container">
                 <div className="navbar-left">
-                    <Link to="/" className="navbar-logo">
+                    <Link to="/" className="navbar-logo" onClick={() => handleNavigation('/')}>
                         Carousel World
                     </Link>
                     <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
                         <li className="navbar-item">
-                            <Link to="/" className="navbar-link">Home</Link>
+                            <Link to="/" className="navbar-link" onClick={() => handleNavigation('/')}>Home</Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="/about" className="navbar-link">About</Link>
+                            <Link to="/about" className="navbar-link" onClick={() => handleNavigation('/about')}>About</Link>
                         </li>
                         <li className="navbar-item dropdown"
                             onMouseEnter={toggleDropdown}
                             onMouseLeave={toggleDropdown}>
-                            <Link to="/collection" className="navbar-link">
+                            <Link to="/collection" className="navbar-link" onClick={() => handleNavigation('/collection')}>
                                 Collection
                             </Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="/misc" className="navbar-link">Miscellaneous</Link>
+                            <Link to="/misc" className="navbar-link" onClick={() => handleNavigation('/misc')}>Miscellaneous</Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="/Foreign" className="navbar-link">Foreign</Link>
+                            <Link to="/Foreign" className="navbar-link" onClick={() => handleNavigation('/Foreign')}>Foreign</Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="/events" className="navbar-link">Events</Link>
+                            <Link to="/events" className="navbar-link" onClick={() => handleNavigation('/events')}>Events</Link>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +78,7 @@ const Navbar = () => {
                         <Phone size={20} />
                         <span>(514) 358-5519</span>
                     </div>
-                    <Link to="/Contact" className="navbar-book">
+                    <Link to="/Contact" className="navbar-book" onClick={() => handleNavigation('/Contact')}>
                         <Calendar size={20} />
                         <span>Place an order</span>
                     </Link>

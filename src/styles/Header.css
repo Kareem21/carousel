@@ -1,6 +1,6 @@
 .navbar {
     background-color: #00274d;
-    padding: 15px 0;
+    padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     position: relative;
@@ -136,11 +136,22 @@
 }
 
 @media (max-width: 1024px) {
+    body {
+        padding-top: 104px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
     .navbar-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 100%;
         left: 0;
         right: 0;
         background-color: #00274d;
@@ -167,6 +178,7 @@
 
     .navbar-toggle {
         display: block;
+        margin-left: 15px;
     }
 
     .dropdown-menu {
@@ -176,20 +188,6 @@
 
     .mobile-collection-btn {
         display: inline-block;
-        position: absolute;
-        right: 70px;
-        top: 50%;
-        transform: translateY(-50%);
+        margin-right: 15px;
     }
-
-    .navbar-toggle {
-        margin-left: 15px;
-    }
-}
-.navbar {
-    background-color: #00274d;
-    padding: 10px 0; /* Reduced padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    position: relative; /* You can also try sticky or fixed */
 }

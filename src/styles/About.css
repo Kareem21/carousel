@@ -1,69 +1,74 @@
 /* General page styles */
 .page-content {
-    padding: 60px 20px;
-    max-width: 1200px;
+    padding: 60px 5%;
+    max-width: 1400px;
     margin: 0 auto;
+    box-sizing: border-box;
+}
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 /* About section */
-.about {
+.about-section {
     margin-top: 40px;
+}
 
-}
-.text-content{
+.text-content {
     color: #6c3e0b;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-.about h2 {
-    font-size: 36px;
+
+.about-section h2,
+.timeline-section h2 {
     font-family: 'Playfair Display', serif;
     color: var(--text-color-primary-dark);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+.about-section h2 {
+    font-size: 48px;
 }
 
 /* Story grid for the text and images */
 .story-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    margin-bottom: 60px;
+    padding: 0 20px;
 }
 
 .story-item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 30px;
 }
 
-.story-item img {
+.story-image {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
 }
 
 /* Timeline styles */
 .timeline-section {
     padding: 20px;
-    background-color: #f8f1e7;
-    margin-bottom: 60px;
-}
-
-.timeline-section h2 {
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
-    color: #8B0000;
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .timeline {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 
 .timeline::after {
@@ -126,14 +131,53 @@
 
 .timeline-description {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
+    line-height: 1.5;
 }
 
-/* Mobile responsive styles */
+/* Footer styles */
+.footer {
+    padding: 40px 20px;
+    background-color: #00274d;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .story-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page-content {
+        padding: 40px 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .story-grid {
         grid-template-columns: 1fr;
+    }
+
+    .text-content, .story-item img {
+        padding: 0 10px;
+    }
+
+    .about-section h2,
+    .timeline-section h2 {
+        font-size: 36px;
+    }
+
+    .text-content {
+        font-size: 16px;
+    }
+
+    .timeline-description {
+        font-size: 14px;
     }
 
     .timeline::after {
@@ -155,15 +199,6 @@
     }
 
     .timeline-content {
-        padding: 15px 20px;
+        padding: 15px;
     }
-}
-
-/* Footer styles */
-.footer {
-    padding: 40px 20px;
-    background-color: #00274d;
-    color: white;
-    text-align: center;
-    margin-top: 60px;
 }
