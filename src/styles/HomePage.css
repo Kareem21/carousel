@@ -344,8 +344,16 @@
     max-height: 200px;
     flex-shrink: 0; /* Prevent images from shrinking */
     animation: bounce 2s ease-in-out infinite; /* Add bounce animation */
+    animation-delay: calc(var(--i) * 0.2s); /* Stagger the animation start */
 }
-
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
 
 .banner-link {
     font-size: 1.5rem;

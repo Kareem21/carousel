@@ -64,7 +64,13 @@ const HomePage = () => {
                         </div>
                         <div className="banner">
                             {carouselItems.map((item, index) => (
-                                <img src={item.image} alt={item.name} key={index} className="banner-image" />
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    key={index}
+                                    className="banner-image"
+                                    style={{"--i": index}} // Assign the index as a CSS variable
+                                />
                             ))}
                         </div>
                         <a href="/collection" className="banner-link">View our full collection here</a>
