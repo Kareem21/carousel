@@ -3,7 +3,7 @@ import '../styles/Events.css';
 
 const Events = () => (
     <div className="events-page">
-        <section className="banner">
+        <section>
             <h1>Carousel World invites you to book our vintage animals for your next event.</h1>
             <p>Whether it's a charity event, a private event or a large scale event, our horses are an excellent addition.</p>
         </section>
