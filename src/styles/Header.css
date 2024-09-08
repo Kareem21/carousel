@@ -1,193 +1,204 @@
 .navbar {
-    background-color: #00274d;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    position: relative;
+  background-color: #00274d;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: relative;
 }
 
 .navbar-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .navbar-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logo {
-    font-family: 'Great Vibes', cursive;
-    font-size: 28px;
-    color: #e6c389;
-    text-decoration: none;
-    margin-right: 30px;
-    white-space: nowrap;
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+  color: #e6c389;
+  text-decoration: none;
+  margin-right: 30px;
+  white-space: nowrap;
 }
 
 .navbar-menu {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    transition: all 0.3s ease-in-out;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-item {
-    margin-left: 20px;
-    position: relative;
+  margin-left: 20px;
+  position: relative;
 }
 
 .navbar-link {
-    font-family: 'Bitter', serif;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  font-family: "Bitter", serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navbar-link:hover {
-    color: #e6c389;
+  color: #e6c389;
 }
 
 .navbar-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.navbar-contact-info, .navbar-book {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    font-family: 'Bitter', serif;
-    font-size: 14px;
-    margin-left: 20px;
+.navbar-contact-info,
+.navbar-book {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+  font-size: 14px;
+  margin-left: 20px;
 }
 
-.navbar-contact-info svg, .navbar-book svg {
-    margin-right: 5px;
+.navbar-contact-info svg,
+.navbar-book svg {
+  margin-right: 5px;
 }
 
 .navbar-book {
-    background-color: #e6c389;
-    color: #00274d;
-    padding: 8px 15px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  background-color: #e6c389;
+  color: #00274d;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .navbar-book:hover {
-    background-color: #d4a76a;
+  background-color: #d4a76a;
 }
 
 .navbar-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 24px;
-    cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #00274d;
-    padding: 10px 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #00274d;
+  padding: 10px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .dropdown-menu.show {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown-item {
-    padding: 8px 20px;
-    font-size: 14px;
+  padding: 8px 20px;
+  font-size: 14px;
 }
 
 .dropdown-item a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: 'Bitter', serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Bitter", serif;
 }
 
 .dropdown-item a:hover {
-    color: #e6c389;
+  color: #e6c389;
 }
 
 @media (max-width: 1024px) {
-    body {
-        padding-top: 104px;
-    }
+  body {
+    padding-top: 60px;
+  }
 
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
-    .navbar-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #00274d;
-        padding: 20px;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        transform: translateY(-20px);
-        opacity: 0;
-    }
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #00274d;
+    padding: 20px;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
 
-    .navbar-menu.active {
-        display: flex;
-        z-index: 1000;
-        transform: translateY(0);
-        opacity: 1;
-    }
+  .navbar-menu.active {
+    display: flex;
+    z-index: 1000;
+    transform: translateY(0);
+    opacity: 1;
+  }
 
-    .navbar-item {
-        margin: 10px 0;
-    }
+  .navbar-item {
+    margin: 10px 0;
+  }
 
-    .navbar-right {
-        display: none;
-    }
+  .navbar-right {
+    display: none;
+  }
 
-    .navbar-toggle {
-        display: block;
-        margin-left: 15px;
-    }
+  .navbar-toggle {
+    display: block;
+    margin-left: 15px;
+  }
 
-    .dropdown-menu {
-        position: static;
-        box-shadow: none;
-    }
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+  }
 
-    .mobile-collection-btn {
-        display: inline-block;
-        margin-right: 15px;
-    }
+  .mobile-collection-btn {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    padding-top: 0; /* or adjust this value to match your navbar height */
+  }
 }
