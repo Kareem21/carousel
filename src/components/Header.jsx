@@ -21,13 +21,11 @@ const Navbar = () => {
         setIsMenuOpen(false);
     };
 
-    // New function to handle navigation and menu closing
     const handleNavigation = (path) => {
         closeMenu();
         navigate(path);
     };
 
-    // Close the menu when clicking outside of it
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -82,8 +80,7 @@ const Navbar = () => {
                         <Calendar size={20} />
                         <span>Place an order</span>
                     </Link>
-                </div >
-
+                </div>
                 <button className="navbar-toggle" onClick={toggleMenu}>
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>

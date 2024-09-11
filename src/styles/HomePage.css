@@ -379,6 +379,8 @@
   margin-left: -50vw;
   margin-right: -50vw;
   background-color: black;
+  z-index: 1; /* Add this line */
+
   overflow: hidden; /* Ensure content doesn't overflow */
 }
 
@@ -395,6 +397,8 @@
   align-items: center;
   gap: 30px;
   margin-bottom: 20px;
+  z-index: 1; /* Add this line */
+
   animation: scroll 20s linear infinite; /* Add animation for scrolling */
 }
 
