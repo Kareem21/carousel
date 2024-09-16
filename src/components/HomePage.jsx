@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+'use client'
+
+import React, { useEffect, useRef } from 'react';
 import "../styles/HomePage.css";
 import "@fontsource/great-vibes";
 import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
 import StarIcon from '@mui/icons-material/Star';
+import { Link } from 'react-router-dom';
 
 const testimonials = [
     { text: "This collection SLAPSSSS FR FR ", author: "Shelby", rating: 5 },
@@ -22,8 +25,18 @@ const carouselItems = [
 ];
 
 const HomePage = () => {
+    const bannerRef = useRef(null);
 
     useEffect(() => {
+        const banner = bannerRef.current;
+        if (banner) {
+            const scrollWidth = banner.scrollWidth / 2;
+            const animationDuration = scrollWidth / 50; // Adjust speed here
+
+            banner.style.setProperty('--scroll-width', `${scrollWidth}px`);
+            banner.style.setProperty('--animation-duration', `${animationDuration}s`);
+        }
+
         let startX = 0;
         let startY = 0;
 
@@ -36,18 +49,15 @@ const HomePage = () => {
             const moveX = event.touches[0].clientX - startX;
             const moveY = event.touches[0].clientY - startY;
 
-            // If horizontal swipe is greater than vertical, prevent default scroll behavior
             if (Math.abs(moveX) > Math.abs(moveY)) {
                 event.preventDefault();
             }
         };
 
-        // Attach event listeners
         const carousel = document.querySelector(".testimonials-section");
         carousel.addEventListener("touchstart", handleTouchStart);
         carousel.addEventListener("touchmove", handleTouchMove);
 
-        // Clean up event listeners on component unmount
         return () => {
             carousel.removeEventListener("touchstart", handleTouchStart);
             carousel.removeEventListener("touchmove", handleTouchMove);
@@ -64,26 +74,24 @@ const HomePage = () => {
                   Vintage Carousel Horses, Antiques, Paintings.
                 </h2>
               </div>
-              <div className="banner">
-                {carouselItems.map((item, index) => (
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    key={index}
-                    className="banner-image"
-                    style={{ "--i": index }} // Assign the index as a CSS variable
-                  />
-                ))}
+              <div className="banner-wrapper">
+                <div className="banner" ref={bannerRef}>
+                  {[...carouselItems, ...carouselItems].map((item, index) => (
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      key={index}
+                      className="banner-image"
+                      style={{ "--i": index % carouselItems.length }}
+                    />
+                  ))}
+                </div>
               </div>
               <a href="/collection" className="banner-link">
                 View our full collection here
               </a>
             </section>
           </div>
-
-          <section className="tagline-section">
-            <p className="tagline">Each item on our site is one of one.</p>
-          </section>
 
           <section className="content">
             <h2 className="content-heading">
@@ -108,16 +116,25 @@ const HomePage = () => {
             </a>
           </section>
 
+          <section className="tagline-section">
+            <p className="tagline">Each item on our site is one of one.</p>
+            <p className="tagline-subtext">
+              Discover unique pieces that can't be found anywhere else.
+            </p>
+          </section>
+
           <section className="cards-section">
             <div className="card about-us-card">
               <h2>ABOUT US</h2>
-              <p> GET TO KNOW US</p>
+              <p>GET TO KNOW US</p>
               <div className="portraits">
                 <img src="/Rand/1.jpg" alt="Portrait 1" className="portrait" />
                 <img src="/Rand/2.jpg" alt="Portrait 2" className="portrait" />
                 <img src="/Rand/3.jpg" alt="Portrait 3" className="portrait" />
               </div>
-              <button className="about-us-button">ABOUT US</button>
+              <Link to="/about" className="card-button about-us-button">
+                ABOUT US
+              </Link>
             </div>
             <div className="card shop-card">
               <h2>SHOP</h2>
@@ -125,8 +142,11 @@ const HomePage = () => {
               <img
                 src={"http://whatsintheoldbox.com/images/wallet-global.svg"}
                 alt="Shop Icon"
+                className="shop-icon"
               />
-              <button className="shop-button">Our Collection</button>
+              <Link to="/collection" className="card-button shop-button">
+                View Collection
+              </Link>
             </div>
           </section>
 
