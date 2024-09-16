@@ -2,6 +2,6 @@ import React from 'react';
 import CategoryTemplate from '../components/CategoryTemplate.jsx';
 import { categories } from '../categoryData.js';
 
-const Dentzel = () => <CategoryTemplate category={categories.dentzel} />;
+const PTC = () => <CategoryTemplate category={categories.ptc} />;
 
-export default Dentzel;
+export default PTC;
