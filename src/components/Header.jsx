@@ -1,29 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Calendar } from 'lucide-react';
 import '../styles/Header.css';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const menuRef = useRef(null);
-    const navigate = useNavigate();
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    };
-
     const closeMenu = () => {
         setIsMenuOpen(false);
-    };
-
-    const handleNavigation = (path) => {
-        closeMenu();
-        navigate(path);
     };
 
     useEffect(() => {
@@ -39,51 +29,58 @@ const Navbar = () => {
         };
     }, []);
 
+    useEffect(() => {
+        closeMenu();
+    }, [location]);
+
+    const navItems = [
+        { path: '/', label: 'Home' },
+        { path: '/about', label: 'About' },
+        { path: '/collection', label: 'Collection' },
+        { path: '/misc', label: 'Miscellaneous' },
+        { path: '/Foreign', label: 'Foreign' },
+        { path: '/events', label: 'Events' },
+    ];
+
     return (
         <nav className="navbar" ref={menuRef}>
             <div className="navbar-container">
-                <div className="navbar-left">
-                    <Link to="/" className="navbar-logo" onClick={() => handleNavigation('/')}>
-                        Carousel World
-                    </Link>
-                    <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-                        <li className="navbar-item">
-                            <Link to="/" className="navbar-link" onClick={() => handleNavigation('/')}>Home</Link>
-                        </li>
-                        <li className="navbar-item">
-                            <Link to="/about" className="navbar-link" onClick={() => handleNavigation('/about')}>About</Link>
-                        </li>
-                        <li className="navbar-item dropdown"
-                            onMouseEnter={toggleDropdown}
-                            onMouseLeave={toggleDropdown}>
-                            <Link to="/collection" className="navbar-link" onClick={() => handleNavigation('/collection')}>
-                                Collection
-                            </Link>
-                        </li>
-                        <li className="navbar-item">
-                            <Link to="/misc" className="navbar-link" onClick={() => handleNavigation('/misc')}>Miscellaneous</Link>
-                        </li>
-                        <li className="navbar-item">
-                            <Link to="/Foreign" className="navbar-link" onClick={() => handleNavigation('/Foreign')}>Foreign</Link>
-                        </li>
-                        <li className="navbar-item">
-                            <Link to="/events" className="navbar-link" onClick={() => handleNavigation('/events')}>Events</Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className="navbar-right">
-                    <div className="navbar-contact-info">
-                        <Phone size={20} />
-                        <span>(514) 358-5519</span>
-                    </div>
-                    <Link to="/Contact" className="navbar-book" onClick={() => handleNavigation('/Contact')}>
-                        <Calendar size={20} />
-                        <span>Place an order</span>
-                    </Link>
-                </div>
-                <button className="navbar-toggle" onClick={toggleMenu}>
+                <Link to="/" className="navbar-logo" onClick={closeMenu}>
+                    Carousel World
+                </Link>
+                <button
+                    className="navbar-toggle"
+                    onClick={toggleMenu}
+                    aria-expanded={isMenuOpen}
+                    aria-label="Toggle navigation menu"
+                >
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
+                <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
+                    <ul className="navbar-list">
+                        {navItems.map((item) => (
+                            <li key={item.path} className="navbar-item">
+                                <Link
+                                    to={item.path}
+                                    className={`navbar-link ${location.pathname === item.path ? 'active' : ''}`}
+                                    onClick={closeMenu}
+                                >
+                                    {item.label}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                    <div className="navbar-contact">
+                        <div className="navbar-contact-info">
+                            <Phone size={20} aria-hidden="true" />
+                            <a href="tel:+15143585519" className="navbar-phone">(514) 358-5519</a>
+                        </div>
+                        <Link to="/Contact" className="navbar-book" onClick={closeMenu}>
+                            <Calendar size={20} aria-hidden="true" />
+                            <span>Place an order</span>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </nav>
     );
