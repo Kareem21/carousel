@@ -17,7 +17,7 @@ import Carmel from './Shop/Carmel.jsx';
 import Mueller from './Shop/Mueller.jsx';
 import Parker from './Shop/Parker.jsx';
 import PTC from './Shop/PTC.jsx';
-import HerschellSpillman from './Shop/hs.jsx';
+import HerschellSpillman from './Shop/HS.jsx';
 import Foreign from './Shop/Foreign.jsx';
 
 
