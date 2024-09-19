@@ -42,7 +42,7 @@ export const categories = {
             { name: "L22", description: " Looff Outside Row Jumper c 1905", price: 0, dimensions: "62 x 56 x 13", image: "/Looff/L22.JPG" },
             { name: "L23", description: " Early Looff Stander ca 1895", price: 18500, dimensions: "62 x 56 x 13", image: "/Looff/L23.JPG"},
             { name: "L39", description: "Looff Giraffe c 1905", price: 15000, dimensions: "62 x 56 x 13", image: "/Looff/L39.JPG" },
-            { name: "L43", description: " Looff Ram", price: 0, dimensions: "62 x 56 x 13", image: "/Looff/L43.JPG" },
+            { name: "L43", description: " Looff Ram", price: 0, dimensions: "62 x 56 x 13", image: "/Looff/L43.JPG" }, //hey
 
         ]
     },
