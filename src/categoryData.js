@@ -21,16 +21,29 @@ export const categories = {
         name: "Stein and Goldstein",
         description: "Stein and Goldstein carousel figures are known for their bold, expressive features and dynamic poses.",
         items: [
-            { name: "S&G Chariot", description: "Ornate chariot with detailed carvings", price: 25000, dimensions: "72 x 48 x 36", image: "/Stein/sg-chariot.jpg" },
-            { name: "S&G Lion", description: "Majestic lion figure with flowing mane", price: 22000, dimensions: "60 x 58 x 14", image: "/Stein/sg-lion.jpg" },
+            { name: "SG1", description: "Stein and Goldstein Front Row\n", price: 0, dimensions: "72 x 48 x 36", image: "/Stein/SG1.png"},
+            { name: "SG4", description: "Stein and Goldstein Disassembled Jumper", price: 30000, dimensions: "60 x 58 x 14", image: "/Stein/SG4.png" },
+            { name: "SG5", description: "Stein and Goldstein Large Jumper", price: 0, dimensions: "60 x 58 x 14", image: "/Stein/SG5.png" },
         ]
     },
     looff: {
         name: "Looff",
         description: "Charles I. D. Looff's carousel figures are renowned for their realism and attention to anatomical detail.",
         items: [
-            { name: "Looff Jumper", description: "Classic Looff jumping horse", price: 20000, dimensions: "58 x 54 x 12", image: "/Looff/looff-jumper.jpg" },
-            { name: "Looff Prancer", description: "Elegant prancing horse", price: 23000, dimensions: "62 x 56 x 13", image: "/Looff/looff-prancer.jpg" },
+            { name: "L1 ", description: "Looff Greyhoound", price: 62000, dimensions: "58 x 54 x 12", image: "/Looff/L1.jpg" },
+            { name: "L3 ", description: "Looff Elephant c 1890", price: 0, dimensions: "62 x 56 x 13", image: "/Looff/L3.JPG" },
+            { name: "L6", description: "Looff Early Outside Row Stander c 1901", price: 20500, dimensions: "62 x 56 x 13", image: "/Looff/L6.JPG" },
+            { name: "L7", description: "Looff Outside Row Stander", price: 28000, dimensions: "62 x 56 x 13", image: "/Looff/L7.JPG" },
+            { name: "L8", description: "Looff Stargazer Outside Row c 1910 ", price: 38000, dimensions: "62 x 56 x 13", image: "/Looff/L8.JPG" },
+            { name: "L10", description: "Looff Outside Row Stander c 1900", price: 22500, dimensions: "62 x 56 x 13", image: "/Looff/L10.JPG" },
+            { name: "L14", description: "Looff Outside Row Jumper", price: 3600, dimensions: "62 x 56 x 13", image: "/Looff/L14.jpg" },
+            { name: "L17", description: "Early Looff Stander ca 1895", price: 15599, dimensions: "62 x 56 x 13", image: "/Looff/L17.JPG" },
+            { name: "L21", description: "Looff Outside Row Jumper c 1905", price: 23000, dimensions: "62 x 56 x 13", image: "/Looff/L21.JPG" },
+            { name: "L22", description: " Looff Outside Row Jumper c 1905", price: 0, dimensions: "62 x 56 x 13", image: "/Looff/L22.JPG" },
+            { name: "L23", description: " Early Looff Stander ca 1895", price: 18500, dimensions: "62 x 56 x 13", image: "/Looff/L23.JPG"},
+            { name: "L39", description: "Looff Giraffe c 1905", price: 15000, dimensions: "62 x 56 x 13", image: "/Looff/L39.JPG" },
+            { name: "L43", description: " Looff Ram", price: 0, dimensions: "62 x 56 x 13", image: "/Looff/L43.JPG" },
+
         ]
     },
     carmel: {
@@ -78,6 +91,10 @@ export const categories = {
         description: "M.C. Illions figures are famous for their flamboyant style and extravagant details.",
         items: [
             { name: "Illions Supreme", description: "Elaborately carved Illions supreme jumper", price: 30000, dimensions: "64 x 60 x 15", image: "/illions/illions-supreme.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
             { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
         ]
     },

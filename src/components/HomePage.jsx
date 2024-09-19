@@ -16,9 +16,9 @@ const testimonials = [
 
 const carouselItems = [
     { name: 'Randomname', image: '/Dentzel/D1.png' },
-    { name: 'Foreign', image: '/Dentzel/D3(1).png' },
-    { name: 'tesfg', image: '/Dentzel/D5(1).png' },
-    { name: 'tdfsfg', image: '/Aboutus/carvers2.jpg' },
+    { name: 'Foreign', image: '/Stein/SG1.png' },
+    { name: 'tesfg', image: '/Looff/L3.JPG' },
+    { name: 'tdfsfg', image: '/PTC/PTC2.JPG' },
     { name: 'tesvccvfg', image: '/Dentzel/D7.png' },
     { name: 'daf', image: '/Dentzel/D9.png' },
     { name: 'tesvccvfg', image: '/Dentzel/D7.png' },

@@ -6,14 +6,14 @@ import '../styles/Collection.css';
 
 const collectionItems = [
     { id: 'dentzel', title: 'Dentzel', description: 'Our Animals that are carved by Dentzel', image: '/Dentzel/test/D1.png' },
-    { id: 'stein-and-goldstein', title: 'Stein and Goldstein', description: 'Our Animals that are carved by Stein and Goldstein', image: '/Stein/S1.png' },
-    { id: 'looff', title: 'Looff', description: '19th Century heavy carved wood plaque figures', image: '/Looff/L1.png' },
-    { id: 'illions', title: 'Illions', description: '19th Century heavy carved wood plaque figures', image: '/illions/L1.png' },
-    { id: 'carmel', title: 'Carmel', description: 'Our Animals that are carved by Carmel', image: '/Carmel/C1.png' },
-    { id: 'mueller', title: 'Mueller', description: 'Our collection includes sports memorabilia, coming soon.', image: '/Mueller/M1.png' },
-    { id: 'parker', title: 'Parker', description: 'Our Animals that are carved by Parker', image: '/Parker/P1.png' },
-    { id: 'ptc', title: 'PTC', description: 'Our Animals that are carved by PTC', image: '/PTC/PTC1.png' },
-    { id: 'herschell-spillman', title: 'Herschell Spillman', description: 'Our Animals that are carved by Herschell Spillman', image: '/HerschellSpillman/HS1.png' },
+    { id: 'stein-and-goldstein', title: 'Stein and Goldstein', description: 'Our Animals that are carved by Stein and Goldstein', image: '/Stein/SG1.png' },
+    { id: 'looff', title: 'Looff', description: 'Our Animals that are carved by Looff', image: '/Looff/L8.JPG' },
+    { id: 'illions', title: 'Illions', description: 'Our Animals that are carved by ILLions', image: '/illions/I2.JPG' },
+    { id: 'carmel', title: 'Carmel', description: 'Our Animals that are carved by Carmel', image: '/Carmel/C2.png' },
+    { id: 'mueller', title: 'Mueller', description: 'Our Animals that are carved by Muller.', image: '/Mueller/M1.jpg' },
+    { id: 'parker', title: 'Parker', description: 'Our Animals that are carved by Parker', image: '/Parker/P2.JPG' },
+    { id: 'ptc', title: 'PTC', description: 'Our Animals that are carved by PTC', image: '/PTC/PTC3.JPG' },
+    { id: 'herschell-spillman', title: 'Herschell Spillman', description: 'Our Animals that are carved by Herschell Spillman', image: '/HS/HS5.JPG' },
 ];
 
 

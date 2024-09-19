@@ -5,8 +5,8 @@
   z-index: 1000;
   position: sticky;
   top: 0;
+  margin-bottom: 0;
 }
-
 .navbar-container {
   max-width: 1200px;
   margin: 0 auto;
