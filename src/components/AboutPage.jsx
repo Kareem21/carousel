@@ -20,19 +20,7 @@ const AboutPage = () => {
         <>
             <div className="page-content">
                 <div className="layout-grid">
-                    <section className="timeline-section">
-                        <h2>The Legacy of Charlotte Dinger</h2>
-                        <div className="timeline">
-                            {timelineEvents.map((event, index) => (
-                                <div key={index} className="timeline-event">
-                                    <div className="timeline-content">
-                                        <div className="timeline-year">{event.year}</div>
-                                        <div className="timeline-description">{event.event}</div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
+
                     <section className="about-section">
                         <h2>Our Story</h2>
                         <div className="story-grid">
