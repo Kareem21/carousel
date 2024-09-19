@@ -46,12 +46,23 @@ export const categories = {
 
         ]
     },
+    illions: {
+        name: "Illions",
+        description: "M.C. Illions figures are famous for their flamboyant style and extravagant details.",
+        items: [
+            { name: "Illions Supreme", description: "Elaborately carved Illions supreme jumper", price: 30000, dimensions: "64 x 60 x 15", image: "/illions/illions-supreme.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+        ]
+    },
     carmel: {
         name: "Carmel",
         description: "Carmel figures are known for their simple yet elegant designs, often featuring patriotic themes.",
         items: [
-            { name: "Carmel Patriot", description: "Patriotic-themed standing horse", price: 18000, dimensions: "56 x 52 x 11", image: "/Carmel/carmel-patriot.jpg" },
-            { name: "Carmel Jumper", description: "Classic Carmel jumping horse", price: 19000, dimensions: "57 x 53 x 12", image: "/Carmel/carmel-jumper.jpg" },
+            { name: "C1 ", description: "Looff Greyhoound", price: 62000, dimensions: "58 x 54 x 12", image: "/Looff/L1.jpg" },
         ]
     },
     mueller: {
@@ -84,18 +95,6 @@ export const categories = {
         items: [
             { name: "H-S Jumper", description: "Classic Herschell Spillman jumping horse", price: 16000, dimensions: "54 x 50 x 11", image: "/HS/hs-jumper.jpg" },
             { name: "H-S Stander", description: "Charming Herschell Spillman standing horse", price: 17000, dimensions: "56 x 52 x 12", image: "/HS/hs-stander.jpg" },
-        ]
-    },
-    illions: {
-        name: "Illions",
-        description: "M.C. Illions figures are famous for their flamboyant style and extravagant details.",
-        items: [
-            { name: "Illions Supreme", description: "Elaborately carved Illions supreme jumper", price: 30000, dimensions: "64 x 60 x 15", image: "/illions/illions-supreme.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
         ]
     },
     foreign: {
