@@ -50,12 +50,19 @@ export const categories = {
         name: "Illions",
         description: "M.C. Illions figures are famous for their flamboyant style and extravagant details.",
         items: [
-            { name: "Illions Supreme", description: "Elaborately carved Illions supreme jumper", price: 30000, dimensions: "64 x 60 x 15", image: "/illions/illions-supreme.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
-            { name: "Illions Stander", description: "Majestic Illions standing horse", price: 28000, dimensions: "62 x 58 x 14", image: "/illions/illions-stander.jpg" },
+            { name: "I1", description: "Illions Outside Stander", price: 65000, dimensions: "64 x 60 x 15", image: "/illions/I1.JPG" },
+            { name: "IA1", description: "Illions Lead Horse Stander", price: 80000, dimensions: "62 x 58 x 14", image: "/illions/IA1.JPG" },
+            { name: "IB1", description: "Illions Lead Horse Stander", price: 80000, dimensions: "62 x 58 x 14", image: "/illions/IB1.JPG" },
+            { name: "I2", description: "Illions Outside Row Stander c 1900", price: 65000, dimensions: "64 x 60 x 15", image: "/illions/I2.JPG" },
+            { name: "I3", description: "Illions Outside Row Stander c 1910", price: 61000, dimensions: "64 x 60 x 15", image: "/illions/I3.JPG" },
+            { name: "I4", description: "Illions Outside Row Lead Horse from Coney Island c 1905", price: 75000, dimensions: "64 x 60 x 15", image: "/illions/I4.JPG" },
+            { name: "I5", description: "Illions Outside Row Jumper c 1910", price: 0, dimensions: "64 x 60 x 15", image: "/illions/I5.JPG" },
+            { name: "I6", description: "Illions Outside Row Jumper c 1910", price: 16500, dimensions: "64 x 60 x 15", image: "/illions/I6.JPG" },
+            { name: "I8", description: "Illions Outside Stander", price: 76000, dimensions: "64 x 60 x 15", image: "/illions/I8.JPG" },
+            { name: "I9", description: "Illions Outside Row Jumper c 1912 From Asbury Park", price: 16000, dimensions: "64 x 60 x 15", image: "/illions/I9.JPG" },
+            { name: "I10", description: "Illions Outside Row Jumper c 1912 From Asbury Park Carousel", price: 16000, dimensions: "64 x 60 x 15", image: "/illions/I10.JPG" },
+            { name: "I12", description: "Illions Outside Row Jumper c 1910", price: 17500, dimensions: "64 x 60 x 15", image: "/illions/I12.JPG" },
+            { name: "I11", description: "Illions Facade Piece", price: 0, dimensions: "Not provided", image: "/illions/I11.jpg" }
         ]
     },
     carmel: {
@@ -69,24 +76,48 @@ export const categories = {
         name: "Mueller",
         description: "Mueller Brothers' figures are celebrated for their distinctive style and high-quality craftsmanship.",
         items: [
-            { name: "Mueller Stander", description: "Impressive Mueller standing horse", price: 21000, dimensions: "60 x 56 x 13", image: "/Mueller/mueller-stander.jpg" },
-            { name: "Mueller Prancer", description: "Elegant Mueller prancing horse", price: 22000, dimensions: "59 x 55 x 12", image: "/Mueller/mueller-prancer.jpg" },
+            { name: "M1", description: "Mueller Indian Pony", price: 0, dimensions: "Not provided", image: "/Mueller/M1.jpg" },
+            { name: "M2", description: "Stripped Outside Row Stander c 1910", price: 60000, dimensions: "64 x 60 x 15", image: "/Mueller/M2.JPG" },
+            { name: "M3", description: "Muller Outside Row Stander c 1910", price: 60500, dimensions: "64 x 60 x 15", image: "/Mueller/M3.JPG" },
+            { name: "M4", description: "Mueller Outside Row Stander c 1910", price: 60500, dimensions: "64 x 60 x 15", image: "/Mueller/M4.JPG" },
+            { name: "M5", description: "Mueller Outside Row Stander c 1910", price: 60500, dimensions: "64 x 60 x 15", image: "/Mueller/M5.JPG" },
+            { name: "M6", description: "Muller Outside Row Stander c 1910", price: 60500, dimensions: "64 x 60 x 15", image: "/Mueller/M6.JPG" },
+            { name: "M7", description: "Mueller Jumper c 1918", price: 38000, dimensions: "64 x 60 x 15", image: "/Mueller/M7.JPG" }
         ]
     },
     parker: {
         name: "Parker",
         description: "C.W. Parker carousel figures are known for their sturdy construction and classic American style.",
         items: [
-            { name: "Parker Jumper", description: "Classic Parker jumping horse", price: 17000, dimensions: "55 x 51 x 11", image: "/Parker/parker-jumper.jpg" },
-            { name: "Parker Stander", description: "Sturdy Parker standing horse", price: 18000, dimensions: "57 x 53 x 12", image: "/Parker/parker-stander.jpg" },
+            { name: "P1", description: "Parker Outside Row Jumper c 1917", price: 33000, dimensions: "64 x 60 x 15", image: "/Parker/P1.JPG" },
+            { name: "P2", description: "Parker Outside Row Jumper c 1917", price: 0, dimensions: "64 x 60 x 15", image: "/Parker/P2.JPG", notes: "DONATED TO MERRY GO ROUND MUSEUM" },
+            { name: "P3", description: "Parker Outside Row Jumper c 1917", price: 28000, dimensions: "64 x 60 x 15", image: "/Parker/P3.JPG" },
+            { name: "P5", description: "Parker Outside Row Jumper c 1917", price: 28000, dimensions: "64 x 60 x 15", image: "/Parker/P5.jpg" },
+            { name: "P6", description: "Parker Jumper Barber Chair", price: 8500, dimensions: "64 x 60 x 15", image: "/Parker/P6.JPG" },
+            { name: "P7", description: "Baby Parker c 1915", price: 6200, dimensions: "64 x 60 x 15", image: "/Parker/P7.JPG" },
+            { name: "P8", description: "Baby Parker c 1915", price: 5200, dimensions: "64 x 60 x 15", image: "/Parker/P8.JPG" },
+            { name: "P10", description: "Parker Outside Row American Beauty Rose ca 1920", price: 33000, dimensions: "64 x 60 x 15", image: "/Parker/P10.jpg" }
         ]
     },
+
     ptc: {
         name: "PTC",
         description: "Philadelphia Toboggan Company (PTC) figures are renowned for their graceful lines and romantic style.",
         items: [
-            { name: "PTC Jumper", description: "Elegant PTC jumping horse", price: 24000, dimensions: "59 x 55 x 13", image: "/PTC/ptc-jumper.jpg" },
-            { name: "PTC Stander", description: "Majestic PTC standing horse", price: 26000, dimensions: "62 x 58 x 14", image: "/PTC/ptc-stander.jpg" },
+            { name: "PTC1", description: "PTC Lion c 1905", price: 35000, dimensions: "64 x 60 x 15", image: "/PTC/PTC1.JPG" },
+            { name: "PTC2", description: "PTC Tiger c 1905", price: 40000, dimensions: "64 x 60 x 15", image: "/PTC/PTC2.JPG" },
+            { name: "PTC3", description: "PTC Camel c 1905", price: 35000, dimensions: "64 x 60 x 15", image: "/PTC/PTC3.JPG" },
+            { name: "PTC4", description: "PTC Sea Dragon c 1905", price: 0, dimensions: "64 x 60 x 15", image: "/PTC/PTC4.jpg" },
+            { name: "PTC5", description: "PTC Giraffe with snake c 1905", price: 0, dimensions: "64 x 60 x 15", image: "/PTC/PTC5.jpg" },
+            { name: "PTC6", description: "Carousel Rocker Horse c 1908", price: 41000, dimensions: "64 x 60 x 15", image: "/PTC/PTC6.JPG" },
+            { name: "PTC7", description: "PTC Armored Outside Stander c 1905", price: 36000, dimensions: "64 x 60 x 15", image: "/PTC/PTC7.JPG" },
+            { name: "PTC11", description: "PTC Outside Row Stander c 1905", price: 32000, dimensions: "64 x 60 x 15", image: "/PTC/PTC11.JPG" },
+            { name: "PTC12", description: "PTC Outside Row Jumper", price: 35000, dimensions: "64 x 60 x 15", image: "/PTC/PTC12.JPG" },
+            { name: "PTC13", description: "PTC Outside Row Jumper", price: 31000, dimensions: "64 x 60 x 15", image: "/PTC/PTC13.JPG" },
+            { name: "PTC14", description: "PTC Outside Row Jumper c 1918", price: 36000, dimensions: "64 x 60 x 15", image: "/PTC/PTC14.JPG" },
+            { name: "PTC15", description: "PTC Outside Row Jumper c 1918", price: 32000, dimensions: "64 x 60 x 15", image: "/PTC/PTC15.JPG" },
+            { name: "PTC17", description: "PTC Outside Row Jumper c 1918", price: 31000, dimensions: "64 x 60 x 15", image: "/PTC/PTC17.JPG" },
+            { name: "PTC18", description: "PTC Outside Row Jumper c 1918", price: 32000, dimensions: "64 x 60 x 15", image: "/PTC/PTC18.JPG" }
         ]
     },
     hs: {
@@ -101,8 +132,13 @@ export const categories = {
         name: "Foreign",
         description: "A collection of unique carousel figures from various international makers.",
         items: [
-            { name: "European Jumper", description: "Elegant jumping horse from a European maker", price: 23000, dimensions: "58 x 54 x 12", image: "/foreign/european-jumper.jpg" },
-            { name: "Asian Stander", description: "Intricately carved standing horse from an Asian maker", price: 25000, dimensions: "60 x 56 x 13", image: "/foreign/asian-stander.jpg" },
+            { name: "EF9", description: "German Children's Ride Giraffe Seat", price: 6500, dimensions: "64 x 60 x 15", image: "/Foreign/EF9.JPG" },
+            { name: "EF10", description: "German Children's Ride Camel Seat", price: 6100, dimensions: "64 x 60 x 15", image: "/Foreign/EF10.JPG" },
+            { name: "EF2", description: "French Bayd Dog", price: 6200, dimensions: "64 x 60 x 15", image: "/Foreign/EF2.JPG" },
+            { name: "EF10", description: "French Bayk Rabbit", price: 0, dimensions: "64 x 60 x 15", image: "/Foreign/EF10.JPG", notes: "PENDING SALE" },
+            { name: "EE2", description: "Ben Hur English Chariot", price: 11200, dimensions: "64 x 60 x 15", image: "/Foreign/EE2.JPG" },
+            { name: "EE3", description: "English Centaur Gordon c 1900", price: 30000, dimensions: "64 x 60 x 15", image: "/Foreign/EE3.JPG" },
+            { name: "EF11", description: "German Carved Seal", price: 6000, dimensions: "64 x 60 x 15", image: "/Foreign/EF11.webp" }
         ]
     }
 };
