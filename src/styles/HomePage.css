@@ -361,6 +361,16 @@ body, html {
   border-radius: 50%;
 }
 
+.timeline-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 250px;
+}
+
 .timeline-year {
   font-weight: bold;
   color: var(--text-color-primary);
@@ -370,7 +380,7 @@ body, html {
 
 .timeline-description {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* Animations */
@@ -397,6 +407,10 @@ body, html {
   .content-timeline-container {
     grid-template-columns: minmax(0, 1fr) 450px;
   }
+
+  .timeline-event {
+    padding-right: 2rem;
+  }
 }
 
 @media (max-width: 1399px) and (min-width: 992px) {
@@ -404,12 +418,20 @@ body, html {
     grid-template-columns: minmax(0, 1fr) 400px;
     gap: 3rem;
   }
+
+  .timeline-event {
+    padding-right: 1.5rem;
+  }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .content-timeline-container {
     grid-template-columns: minmax(0, 1fr) 350px;
     gap: 2rem;
+  }
+
+  .timeline-event {
+    padding-right: 1rem;
   }
 }
 
@@ -423,6 +445,11 @@ body, html {
   .content-cards-container,
   .timeline-section {
     max-width: 100%;
+  }
+
+  .timeline-section {
+    order: -1;
+    margin-top: 2rem;
   }
 
   .banner-image {
@@ -474,12 +501,9 @@ body, html {
     font-size: 1rem;
   }
 
-  .timeline-section {
-    margin-top: 2rem;
-  }
-
   .timeline-event {
     margin-bottom: 1.5rem;
+    padding-right: 0.5rem;
   }
 
   .timeline-year {

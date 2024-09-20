@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Cateogry.css';
 import '../styles/App.css';
@@ -20,6 +21,19 @@ const ImagePopup = ({ isOpen, onClose, image }) => {
 
 const CategoryTemplate = ({ category }) => {
     const [selectedImage, setSelectedImage] = useState(null);
+    const [showAvailableOnly, setShowAvailableOnly] = useState(false);
+    const [filteredItems, setFilteredItems] = useState([]);
+
+    useEffect(() => {
+        if (category) {
+            setFilteredItems(
+                category.items.filter((horse) => {
+                    if (showAvailableOnly) return horse.price > 0;
+                    return true;
+                })
+            );
+        }
+    }, [category, showAvailableOnly]);
 
     if (!category) {
         return <div>Category not found</div>;
@@ -31,6 +45,10 @@ const CategoryTemplate = ({ category }) => {
 
     const closeImagePopup = () => {
         setSelectedImage(null);
+    };
+
+    const toggleAvailableFilter = () => {
+        setShowAvailableOnly(!showAvailableOnly);
     };
 
     return (
@@ -49,9 +67,17 @@ const CategoryTemplate = ({ category }) => {
             <div className="maker-page">
                 <h1 className="maker-title">Carved By {category.name}</h1>
                 <h3>{category.description}</h3>
+                <div className="filter-controls">
+                    <button
+                        onClick={toggleAvailableFilter}
+                        className={`modern-filter-button ${showAvailableOnly ? 'active' : ''}`}
+                    >
+                        {showAvailableOnly ? 'Show All' : 'Show Available Only'}
+                    </button>
+                </div>
                 <div className="maker-content">
                     <div className="horse-grid">
-                        {category.items.map((horse, index) => (
+                        {filteredItems.map((horse, index) => (
                             <div key={index} className="horse-card">
                                 <img
                                     src={horse.image}

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "../styles/HomePage.css";
 import "@fontsource/great-vibes";
 import { Carousel } from "react-responsive-carousel";
@@ -38,17 +38,42 @@ const timelineEvents = [
 
 const HomePage = () => {
     const bannerRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
         const banner = bannerRef.current;
         if (banner) {
             const scrollWidth = banner.scrollWidth / 2;
-            const animationDuration = scrollWidth / 50; // Adjust speed here
-
+            const animationDuration = scrollWidth / 50;
             banner.style.setProperty('--scroll-width', `${scrollWidth}px`);
             banner.style.setProperty('--animation-duration', `${animationDuration}s`);
         }
+
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    const TimelineSection = () => (
+        <section className="timeline-section">
+            <h2>The Legacy of Charlotte Dinger</h2>
+            <div className="timeline">
+                {timelineEvents.map((event, index) => (
+                    <div key={index} className="timeline-event">
+                        <div className="timeline-content">
+                            <div className="timeline-year">{event.year}</div>
+                            <div className="timeline-description">{event.event}</div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
 
     return (
         <div className="page-content">
@@ -103,6 +128,8 @@ const HomePage = () => {
                                 Explore Our Curated Collection
                             </a>
                         </section>
+
+                        {isMobile && <TimelineSection />}
 
                         <section className="tagline-section">
                             <p className="tagline">Each item on our site is one of one.</p>
@@ -189,19 +216,7 @@ const HomePage = () => {
                         </section>
                     </div>
 
-                    <section className="timeline-section">
-                        <h2>The Legacy of Charlotte Dinger</h2>
-                        <div className="timeline">
-                            {timelineEvents.map((event, index) => (
-                                <div key={index} className="timeline-event">
-                                    <div className="timeline-content">
-                                        <div className="timeline-year">{event.year}</div>
-                                        <div className="timeline-description">{event.event}</div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
+                    {!isMobile && <TimelineSection />}
                 </div>
             </div>
         </div>
