@@ -132,13 +132,13 @@ export const categories = {
         name: "Foreign",
         description: "A collection of unique carousel figures from various international makers.",
         items: [
-            { name: "EF9", description: "German Children's Ride Giraffe Seat", price: 6500, dimensions: "64 x 60 x 15", image: "/Foreign/EF9.JPG" },
-            { name: "EF10", description: "German Children's Ride Camel Seat", price: 6100, dimensions: "64 x 60 x 15", image: "/Foreign/EF10.JPG" },
-            { name: "EF2", description: "French Bayd Dog", price: 6200, dimensions: "64 x 60 x 15", image: "/Foreign/EF2.JPG" },
-            { name: "EF10", description: "French Bayk Rabbit", price: 0, dimensions: "64 x 60 x 15", image: "/Foreign/EF10.JPG", notes: "PENDING SALE" },
-            { name: "EE2", description: "Ben Hur English Chariot", price: 11200, dimensions: "64 x 60 x 15", image: "/Foreign/EE2.JPG" },
-            { name: "EE3", description: "English Centaur Gordon c 1900", price: 30000, dimensions: "64 x 60 x 15", image: "/Foreign/EE3.JPG" },
-            { name: "EF11", description: "German Carved Seal", price: 6000, dimensions: "64 x 60 x 15", image: "/Foreign/EF11.webp" }
+            { name: "EF9", description: "German Children's Ride Giraffe Seat", price: 6500, dimensions: "64 x 60 x 15", image: "/foreign/EF10.JPG" },
+            { name: "EF10", description: "German Children's Ride Camel Seat", price: 6100, dimensions: "64 x 60 x 15", image: "/foreign/EF10.JPG" },
+            { name: "EF2", description: "French Bayd Dog", price: 6200, dimensions: "64 x 60 x 15", image: "/foreign/EF2.JPG" },
+            { name: "EF10", description: "French Bayk Rabbit", price: 0, dimensions: "64 x 60 x 15", image: "/foreign/EF10.JPG", notes: "PENDING SALE" },
+            { name: "EE2", description: "Ben Hur English Chariot", price: 11200, dimensions: "64 x 60 x 15", image: "/foreign/EE2.JPG" },
+            { name: "EE3", description: "English Centaur Gordon c 1900", price: 30000, dimensions: "64 x 60 x 15", image: "/foreign/EE3.JPG" },
+            { name: "EF11", description: "German Carved Seal", price: 6000, dimensions: "64 x 60 x 15", image: "/foreign/EF11.webp" }
         ]
     }
 };
