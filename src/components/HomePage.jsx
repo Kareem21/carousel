@@ -9,10 +9,13 @@ import StarIcon from '@mui/icons-material/Star';
 import { Link } from 'react-router-dom';
 
 const testimonials = [
-    { text: "This collection SLAPSSSS FR FR ", author: "Shelby", rating: 5 },
-    { text: " ANTIQUECAROUSELS.COM COULD NEVER ", author: "Mike hawk", rating: 5 },
-    { text: "I LOVE BIG CAROUSELS AND I CANNOT LIE", author: "Julius Seizure", rating: 5 },
+    { text: "This collection SLAPSSSS FR FR" , author: "Shelby", rating: 5 },
     { text: "Muellers #1 FAN!!!!! ugh hes so good  ", author: "MUellerlover32", rating: 5 },
+    { text: " ANTIQUECAROUSELS.COM COULD NEVER ", author: "Mike hawk", rating: 5 },
+    { text: "IS HERSCHELL SPILLMAN SINGLE  ", author: "elsa55", rating: 5 },
+    { text: "I LOVE BIG CAROUSELS AND I CANNOT LIE ", author: "Julius seizure", rating: 5 },
+    { text: " GO TO THE PUBLIC BEACH ", author: "fiesty", rating: 5 },
+    { text: "better than investing in stocks, i am now a proud owner of 6 horses ", author: "Bobloblaw", rating: 5 },
 ];
 
 const carouselItems = [
