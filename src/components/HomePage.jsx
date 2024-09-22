@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
 import "../styles/HomePage.css";
@@ -9,13 +9,13 @@ import StarIcon from '@mui/icons-material/Star';
 import { Link } from 'react-router-dom';
 
 const testimonials = [
-    { text: "This collection SLAPSSSS FR FR" , author: "Shelby", rating: 5 },
-    { text: "Muellers #1 FAN!!!!! ugh hes so good  ", author: "MUellerlover32", rating: 5 },
-    { text: " ANTIQUECAROUSELS.COM COULD NEVER ", author: "Mike hawk", rating: 5 },
-    { text: "IS HERSCHELL SPILLMAN SINGLE  ", author: "elsa55", rating: 5 },
-    { text: "No more horsin around on ebay or elsewhere, these are the real deal!!! ", author: "Julius seizure", rating: 5 },
-    { text: " GO TO THE PUBLIC BEACH ", author: "fiesty", rating: 5 },
-    { text: "better than investing in stocks, i am now a proud owner of 6 horses ", author: "Bobloblaw", rating: 5 },
+    { text: "This collection SLAPSSSS FR FR", author: "Shelby", rating: 5 },
+    { text: "Muellers #1 FAN!!!!! ugh hes so good", author: "MUellerlover32", rating: 5 },
+    { text: "ANTIQUECAROUSELS.COM COULD NEVER", author: "Mike Hawk", rating: 5 },
+    { text: "IS HERSCHELL SPILLMAN SINGLE", author: "elsa55", rating: 5 },
+    { text: "No more horsin around on ebay or elsewhere, these are the real deal!!!", author: "Julius Seizure", rating: 5 },
+    { text: "GO TO THE PUBLIC BEACH", author: "Fiesty", rating: 5 },
+    { text: "Better than investing in stocks, I am now a proud owner of 6 horses", author: "Bob Loblaw", rating: 5 },
 ];
 
 const carouselItems = [
@@ -67,7 +67,7 @@ const HomePage = () => {
             <h2>The Legacy of Charlotte Dinger</h2>
             <div className="timeline">
                 {timelineEvents.map((event, index) => (
-                    <div key={index} className="timeline-event">
+                    <div key={index} className={`timeline-event ${index % 2 === 0 ? 'left' : 'right'}`}>
                         <div className="timeline-content">
                             <div className="timeline-year">{event.year}</div>
                             <div className="timeline-description">{event.event}</div>
@@ -84,9 +84,7 @@ const HomePage = () => {
                 <div className="full-width-banner">
                     <section className="banner-section">
                         <div className="banner-text-container">
-                            <h2 className="banner-title">
-                                Vintage Carousel Horses, Antiques, Paintings.
-                            </h2>
+                            <h2 className="banner-title">Vintage Carousel Horses, Antiques, Paintings.</h2>
                         </div>
                         <div className="banner-wrapper">
                             <div className="banner" ref={bannerRef}>
@@ -110,35 +108,20 @@ const HomePage = () => {
                 <div className="content-timeline-container">
                     <div className="content-cards-container">
                         <section className="content">
-                            <h2 className="content-heading">
-                                Timeless Carousel Horses, Rare Antiques, and Fine Paintings
-                            </h2>
+                            <h2 className="content-heading">Timeless Carousel Horses, Rare Antiques, and Fine Paintings</h2>
                             <div className="content-grid">
-                                <p className="content-paragraph">
-                                    Welcome to Carousel World, a curated haven of meticulously
-                                    restored carousel animals and fine art pieces...
-                                </p>
-                                <p className="content-paragraph">
-                                    The collectible animals in our esteemed collection have been
-                                    cherished by our family for generations...
-                                </p>
-                                <p className="content-paragraph">
-                                    Every item tells a story of unparalleled craftsmanship, artistic
-                                    vision, and the joyous spirit of generations past...
-                                </p>
+                                <p className="content-paragraph">Welcome to Carousel World, a curated haven of meticulously restored carousel animals and fine art pieces...</p>
+                                <p className="content-paragraph">The collectible animals in our esteemed collection have been cherished by our family for generations...</p>
+                                <p className="content-paragraph">Every item tells a story of unparalleled craftsmanship, artistic vision, and the joyous spirit of generations past...</p>
                             </div>
-                            <a href="/collection" className="cta-button">
-                                Explore Our Curated Collection
-                            </a>
+                            <a href="/collection" className="cta-button">Explore Our Curated Collection</a>
                         </section>
 
                         {isMobile && <TimelineSection />}
 
                         <section className="tagline-section">
                             <p className="tagline">Each item on our site is one of one.</p>
-                            <p className="tagline-subtext">
-                                Discover unique pieces that can't be found anywhere else.
-                            </p>
+                            <p className="tagline-subtext">Discover unique pieces that can't be found anywhere else.</p>
                         </section>
 
                         <section className="cards-section">
@@ -150,21 +133,17 @@ const HomePage = () => {
                                     <img src="/Rand/2.jpg" alt="Portrait 2" className="portrait" />
                                     <img src="/Rand/3.jpg" alt="Portrait 3" className="portrait" />
                                 </div>
-                                <Link to="/about" className="card-button about-us-button">
-                                    ABOUT US
-                                </Link>
+                                <Link to="/about" className="card-button about-us-button">ABOUT US</Link>
                             </div>
                             <div className="card shop-card">
                                 <h2>SHOP</h2>
                                 <h3>GO HAVE A LOOK</h3>
                                 <img
-                                    src={"http://whatsintheoldbox.com/images/wallet-global.svg"}
+                                    src="http://whatsintheoldbox.com/images/wallet-global.svg"
                                     alt="Shop Icon"
                                     className="shop-icon"
                                 />
-                                <Link to="/collection" className="card-button shop-button">
-                                    View Collection
-                                </Link>
+                                <Link to="/collection" className="card-button shop-button">View Collection</Link>
                             </div>
                         </section>
 
@@ -178,6 +157,7 @@ const HomePage = () => {
                                 swipeable={true}
                                 emulateTouch={true}
                                 swipeToSlide={true}
+                                width="100%" /* Ensures responsive carousel */
                             >
                                 {testimonials.map((testimonial, index) => (
                                     <div key={index} className="testimonial-ticket">
@@ -185,9 +165,7 @@ const HomePage = () => {
                                             {[...Array(5)].map((_, i) => (
                                                 <StarIcon
                                                     key={i}
-                                                    className={
-                                                        i < testimonial.rating ? "star-filled" : "star-empty"
-                                                    }
+                                                    className={i < testimonial.rating ? "star-filled" : "star-empty"}
                                                 />
                                             ))}
                                         </div>
@@ -199,10 +177,7 @@ const HomePage = () => {
                         </section>
 
                         <section className="carvers-section">
-                            <h2 className="carvers-heading">
-                                Our carousel animals are masterfully crafted by the world's most
-                                renowned artisans
-                            </h2>
+                            <h2 className="carvers-heading">Our carousel animals are masterfully crafted by the world's most renowned artisans</h2>
                             <div className="carvers-links">
                                 <span>Charles I.D. Loof</span>
                                 <span>Herschell Spillman Co.</span>

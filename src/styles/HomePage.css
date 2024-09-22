@@ -101,6 +101,11 @@ body, html {
   max-width: 800px;
 }
 
+.expanded-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* Content Section */
 .content {
   text-align: center;
@@ -273,6 +278,35 @@ body, html {
   margin-top: 1rem;
 }
 
+/* Mobile Styles for Testimonials */
+@media (max-width: 767px) {
+  .testimonials-section {
+    padding: 0 10px;
+  }
+
+  .testimonials-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-ticket {
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .testimonial-ticket p {
+    font-size: 1rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-carousel {
+    max-width: 100%;
+  }
+}
+
 /* Carvers Section */
 .carvers-section {
   text-align: center;
@@ -348,6 +382,14 @@ body, html {
   padding-left: 1.5rem;
   position: relative;
   margin-bottom: 2rem;
+}
+
+.timeline-event.left .timeline-content {
+  margin-right: auto;
+}
+
+.timeline-event.right .timeline-content {
+  margin-left: auto;
 }
 
 .timeline-event::before {
