@@ -1,12 +1,10 @@
 import React from 'react';
 import '../styles/About.css';
-import '../styles/App.css';
-import "@fontsource/playfair-display/600.css";
 
 const AboutPage = () => {
   return (
-      <div className="about-page">
-        <div className="page-content">
+      <div className="about-page" style={{ display: 'flex', justifyContent: 'center' }}>
+        <div className="page-content" style={{ maxWidth: '800px', width: '100%', padding: '0 20px' }}>
           <h1 className="section-title">Our Story</h1>
           <div className="decorative-line"></div>
 
@@ -20,7 +18,8 @@ const AboutPage = () => {
               world's leading collectors, and foremost authorities on antique carousels and carousel art. The second
               experience came during a 1972 visit to the antique store, where she encountered an old and faded carousel
               horse. For all its neglect and disrepair it evoked a strong and powerful nostalgic recollection of her
-              bright childhood fascination, so she paid $75 on the spot... </p>
+              bright childhood fascination, so she paid $75 on the spot...
+            </p>
           </section>
 
           <div className="decorative-line"></div>
@@ -29,7 +28,8 @@ const AboutPage = () => {
             <p>
               After bringing the many pieces of the small wooden horse home, she began stripping away the successive
               layers of thick paint. The obscured delicate carved features soon began to show. Her childhood fascination
-              was well on the way to becoming a full-blown adult obsession. </p>
+              was well on the way to becoming a full-blown adult obsession.
+            </p>
             <div className="image-container">
               <img src="/Aboutus/blackwhite.jpg" alt="Vintage carousel horses" className="story-image"/>
             </div>
@@ -44,7 +44,6 @@ const AboutPage = () => {
               destination was the Dinger's garage. By this time Charlotte Dinger was in full swing. Figures that had
               been stripped from thousands of carousels from the turn of the century were now recognized as valuable
               examples of neglected art. Charlotte Dinger was in the midst of rescuing many of these wonderful steeds.
-
             </p>
           </section>
 
@@ -52,8 +51,7 @@ const AboutPage = () => {
 
           <section className="story-section">
             <div className="image-container">
-              <img src="/Aboutus/blackwhite.jpg" alt="Charlotte Dinger restoring a carousel horse"
-                   className="story-image"/>
+              <img src="/Aboutus/blackwhite.jpg" alt="Charlotte Dinger restoring a carousel horse" className="story-image"/>
             </div>
             <p>
               Her husband Carl, only mildly irritated at the loss of space for the family cars, could hardly complain.
@@ -62,7 +60,6 @@ const AboutPage = () => {
               scores of horses, and other carousel figures. She became familiar with the history of the American
               carousel, from its beginnings in 1867 with the work of a German immigrant, Gustav Dentzel, until its
               decline after the introduction of the automobile, and its abrupt demise during the Depression of the 1930s
-
             </p>
           </section>
 
@@ -73,7 +70,6 @@ const AboutPage = () => {
               In time she became an expert in the subtle distinctions in the work of such carousel masters as Charles
               Loof, (known for friendly, smiling steeds) Sol Stein and Harry Goldstein (creators of the Central Park
               Carousel.) and many other great carvers.
-
             </p>
           </section>
 
@@ -86,7 +82,6 @@ const AboutPage = () => {
               the definitive coffee table book, " ART OF THE CAROUSEL ". When her collection threatened to outstrip the
               capacity of her home, she put together a traveling exhibition that was on display at museums across the
               country.
-
             </p>
           </section>
 
@@ -105,17 +100,14 @@ const AboutPage = () => {
               Society, which estimates there were once 3,000 to 6,000 carousels in the country, from the famous Flying
               Horses on Marthas Vineyard, where children still ride on the oldest American carousel, assembled in 1884,
               to the last carousels produced in the1920s.) There are now only 133 left.
-
             </p>
           </section>
+
           <div className="decorative-line"></div>
 
           <section className="story-section">
             <p>
               With all her instincts as a collector, and her appreciation of carousels and carousel art, she has preserved a legacy for the future. Charlotte Dinger did realized her childhood dream The Fairy Tale Experience Of Whirling Around On A Beautiful Carousel.
-
-
-
             </p>
           </section>
         </div>

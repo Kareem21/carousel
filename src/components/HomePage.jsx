@@ -3,20 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "../styles/HomePage.css";
 import "@fontsource/great-vibes";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import StarIcon from '@mui/icons-material/Star';
 import { Link } from 'react-router-dom';
-
-const testimonials = [
-    { text: "This collection SLAPSSSS FR FR", author: "Shelby", rating: 5 },
-    { text: "Muellers #1 FAN!!!!! ugh hes so good", author: "MUellerlover32", rating: 5 },
-    { text: "ANTIQUECAROUSELS.COM COULD NEVER", author: "Mike Hawk", rating: 5 },
-    { text: "IS HERSCHELL SPILLMAN SINGLE", author: "elsa55", rating: 5 },
-    { text: "No more horsin around on ebay or elsewhere, these are the real deal!!!", author: "Julius Seizure", rating: 5 },
-    { text: "GO TO THE PUBLIC BEACH", author: "Fiesty", rating: 5 },
-    { text: "Better than investing in stocks, I am now a proud owner of 6 horses", author: "Bob Loblaw", rating: 5 },
-];
 
 const carouselItems = [
     { name: 'Randomname', image: '/Dentzel/D1.png' },
@@ -37,6 +24,19 @@ const timelineEvents = [
     { year: 1996, event: "Charlotte Dinger passes away, but her collection continues to be showcased across the nation." },
     { year: 2000, event: "Her collection is featured in various traveling shows, maintaining her legacy." },
     { year: 2024, event: "Our family brings you the full collection, here at Carouselworld.com" }
+];
+
+const testimonials = [
+    {
+        text: "We were very pleased with our S&G piece from Carousel world. Their entire process including communication, delivery and . Not only is the design visually appealing, but the functionality is also seamless, providing an excellent user experience. Throughout the process, we were very happy with their professionalism and responsiveness. Would highly recommend Blue Beetle to anyone seeking web development services. Thank you to Danielle, Jessika, Daniella and Mark.",
+        author: "fiesty",
+    },
+    {
+        text: "Blue Beetle team has significantly contributed to the hotel's success by enhancing our digital presence. They have played a crucial role in optimizing the website and improving our SEO performance. Additionally, Blue Beetle has been instrumental in resolving various issues, including those related to the Google revenue platform. Kudos to Jessika, Ridum, Daniella and Marno.",
+        author: "Beneli Sari",
+        position: "Marketing Manager",
+        company: "mysk"
+    }
 ];
 
 const HomePage = () => {
@@ -117,7 +117,6 @@ const HomePage = () => {
                             <a href="/collection" className="cta-button">Explore Our Curated Collection</a>
                         </section>
 
-                        {isMobile && <TimelineSection />}
 
                         <section className="tagline-section">
                             <p className="tagline">Each item on our site is one of one.</p>
@@ -139,7 +138,7 @@ const HomePage = () => {
                                 <h2>SHOP</h2>
                                 <h3>GO HAVE A LOOK</h3>
                                 <img
-                                    src="http://whatsintheoldbox.com/images/wallet-global.svg"
+                                    src="/wallet.svg"
                                     alt="Shop Icon"
                                     className="shop-icon"
                                 />
@@ -148,32 +147,28 @@ const HomePage = () => {
                         </section>
 
                         <section className="testimonials-section">
-                            <h2>What Our Visitors Say</h2>
-                            <Carousel
-                                showArrows={true}
-                                infiniteLoop={true}
-                                showThumbs={false}
-                                showStatus={false}
-                                swipeable={true}
-                                emulateTouch={true}
-                                swipeToSlide={true}
-                                width="100%" /* Ensures responsive carousel */
-                            >
+                            <h2>What Our Customers Say</h2>
+                            <p className="testimonials-description">
+                                Dive into the glowing endorsements from our customers, who've
+                                enjoyed items from our collection.
+                            </p>
+                            <div className="testimonials-grid">
                                 {testimonials.map((testimonial, index) => (
-                                    <div key={index} className="testimonial-ticket">
+                                    <div key={index} className="testimonial-card">
                                         <div className="testimonial-rating">
                                             {[...Array(5)].map((_, i) => (
-                                                <StarIcon
-                                                    key={i}
-                                                    className={i < testimonial.rating ? "star-filled" : "star-empty"}
-                                                />
+                                                <span key={i} className="star">★</span>
                                             ))}
                                         </div>
-                                        <p>"{testimonial.text}"</p>
-                                        <p className="testimonial-author">- {testimonial.author}</p>
+                                        <p className="testimonial-text">{testimonial.text}</p>
+                                        <div className="testimonial-author">
+                                            <p className="author-name">{testimonial.author}</p>
+                                            <p className="author-position">{testimonial.position}</p>
+                                            <p className="author-company">{testimonial.company}</p>
+                                        </div>
                                     </div>
                                 ))}
-                            </Carousel>
+                            </div>
                         </section>
 
                         <section className="carvers-section">

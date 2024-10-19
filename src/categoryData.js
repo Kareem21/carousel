@@ -1,8 +1,7 @@
 export const categories = {
     dentzel: {
         name: "Dentzel",
-        description: "These vintage carousel horses are meticulously hand-carved by the renowned Dentzel Company, known for their exceptional craftsmanship and attention to detail.",
-        items: [
+        description: "The Dentzel Carousel Company, founded by Gustav Dentzel in 1867, is renowned for its exquisite hand-carved wooden carousel animals. These masterpieces are characterized by their lifelike features, intricate details, and vibrant paint work. Dentzel carousels often featured a menagerie of animals beyond horses, including lions, tigers, rabbits, and more exotic creatures like ostriches and zebras. The company's commitment to quality and artistry made Dentzel figures highly sought after, with many of their carousels becoming National Historic Landmarks. Today, Dentzel carousel animals are prized by collectors and enthusiasts for their historical significance and unparalleled craftsmanship.",        items: [
             { name: "D1 Dentzel Lion", description: "Hand-Carved Wooden Carousel Lion. This beautifully detailed, hand-carved wooden lion captures the majestic power of the king of the jungle with intricate craftsmanship. Adorned with an ornate saddle and a charming cherub, this golden-brown masterpiece is a perfect statement piece for any antique collection.", price: 15000, dimensions: "58 x 58 x 13", image: "/Dentzel/D1.png" },
             { name: "D3 Dentzel Lion", description: "Majestic standing lion", price: 18000, dimensions: "55 x 78 x 16", image: "/Dentzel/D3.png" },
             { name: "D5 Dentzel Tiger c. 1910", description: "Fierce tiger with original paint", price: 20000, dimensions: "59 x 69 x 52 x 12", image: "/Dentzel/D5.png" },
@@ -34,8 +33,7 @@ export const categories = {
     },
     stein: {
         name: "Stein and Goldstein",
-        description: "Stein and Goldstein carousel figures are known for their bold, expressive features and dynamic poses.",
-        items: [
+        description: "Stein and Goldstein, a partnership between Solomon Stein and Harry Goldstein, produced some of the most distinctive and expressive carousel figures in the early 20th century. Known for their bold, dynamic style, Stein and Goldstein horses often feature dramatic poses, flared nostrils, and wild manes that seem to be caught in mid-motion. Their figures are characterized by exaggerated musculature and highly detailed trappings, often adorned with jewels and intricate carving. The company's relatively short production period, from 1902 to 1925, makes their pieces particularly rare and valuable. Stein and Goldstein figures are celebrated for their artistic flair and the sense of movement they bring to carousel art.",        items: [
             { name: "SG1", description: "Stein and Goldstein Front Row\n", price: 0, dimensions: "72 x 48 x 36", image: "/Stein/SG1.png"},
             { name: "SG4", description: "Stein and Goldstein Disassembled Jumper", price: 30000, dimensions: "60 x 58 x 14", image: "/Stein/SG4.png" },
             { name: "SG5", description: "Stein and Goldstein Large Jumper", price: 0, dimensions: "60 x 58 x 14", image: "/Stein/SG5.png" },
@@ -43,8 +41,7 @@ export const categories = {
     },
     looff: {
         name: "Looff",
-        description: "Charles I. D. Looff's carousel figures are renowned for their realism and attention to anatomical detail.",
-        items: [
+        description: "Charles I. D. Looff, a Danish-American master carver, is considered one of the founding fathers of the American carousel industry. Looff's figures are renowned for their realism, anatomical accuracy, and graceful lines. His horses often feature flowing manes, expressive eyes, and beautifully carved musculature that showcases his deep understanding of equine anatomy. Looff's style evolved over time, from his early, more simplistic carvings to later, more ornate designs. Beyond horses, Looff created a variety of menagerie animals, including his famous 'Looff Giraffe' and 'Looff Greyhound'. His work not only graced carousels but also contributed to the broader amusement park industry, with many of his creations still in operation today.",        items: [
             { name: "L1 ", description: "Looff Greyhoound", price: 62000, dimensions: "64 x 57 x 12", image: "/Looff/L1.jpg" },
             { name: "L3 ", description: "Looff Elephant c 1890", price: 0, dimensions: "62 x 56 x 13", image: "/Looff/L3.JPG" },
             { name: "L6", description: "Looff Early Outside Row Stander c 1901", price: 20500, dimensions: "62 x 56 x 13", image: "/Looff/L6.JPG" },
@@ -62,8 +59,7 @@ export const categories = {
     },
     illions: {
         name: "Illions",
-        description: "M.C. Illions figures are famous for their flamboyant style and extravagant details.",
-        items: [
+        description: "M.C. Illions, often referred to as the 'Michelangelo of carousel art', is famous for his flamboyant and extravagant carousel figures. Illions' horses are known for their spirited poses, elaborate decorations, and a distinctive style that came to be known as the 'Coney Island style'. His figures often feature wildly striding legs, flying manes and tails, and are adorned with intricate carvings of flowers, jewels, and patriotic symbols. Illions' work is characterized by its sense of motion and energy, with horses that seem to leap off the carousel platform. His later works, particularly those from the 1920s, are considered the pinnacle of carousel art, showcasing an unparalleled level of detail and artistic expression that continues to captivate audiences today.",        items: [
             { name: "I1", description: "Illions Outside Stander", price: 65000, dimensions: "61 x 57 x 12", image: "/illions/I1.JPG" },
             { name: "IA1", description: "Illions Lead Horse Stander", price: 80000, dimensions: "64 x 57 x 12", image: "/illions/IA1.JPG" },
             { name: "IB1", description: "Illions Lead Horse Stander", price: 80000, dimensions: "57.5 x 62 x 12", image: "/illions/IB1.JPG" },
@@ -81,8 +77,7 @@ export const categories = {
     },
     carmel: {
         name: "Carmel",
-        description: "Carmel figures are known for their simple yet elegant designs, often featuring patriotic themes.",
-        items: [
+        description: "The Carmel Carousel Company, founded by Daniel Muller in 1905, is known for producing carousel figures with a distinct blend of realism and folk art charm. Carmel horses are often recognized by their alert expressions, well-defined musculature, and patriotic themes. The company's style evolved over time, incorporating more elaborate trappings and jewels in later years. Carmel figures are particularly noted for their sturdy construction, making them well-suited for use in working carousels. The company's output included not just horses but also chariots and menagerie animals. Despite a relatively short production period, Carmel figures have left a lasting impact on carousel art, appreciated for their unique combination of durability and artistic merit.",        items: [
             { name: "C1 ", description: "Looff Greyhoound", price: 62000, dimensions: "58 x 54 x 12", image: "/Looff/L1.jpg" },
             { name: "C3", description: "Carmel Horse", price: 0, dimensions: "58 x 58 x 13", image: "/Carmel/C3.jpg" },
             { name: "C8", description: "Carmel Horse", price: 0, dimensions: "57 x 59 x 13", image: "/Carmel/C8.jpg" },
@@ -97,8 +92,7 @@ export const categories = {
     },
     mueller: {
         name: "Mueller",
-        description: "Mueller Brothers' figures are celebrated for their distinctive style and high-quality craftsmanship.",
-        items: [
+        description: "The Mueller Brothers, Daniel and Alfred, are celebrated for creating some of the most distinctive and high-quality carousel figures of the early 20th century. Their work is characterized by a unique blend of realism and stylization, with horses featuring expressive faces, powerful musculature, and intricate trappings. Mueller figures often showcase creative and sometimes whimsical details, such as carved eagles on breastplates or unusual color combinations. The brothers' background in furniture making is evident in the structural integrity of their pieces. Mueller carousel animals are particularly prized for their rarity, as the company's production was limited compared to some of their contemporaries. Their figures, especially the elaborately carved and decorated 'Supreme' style horses, represent a high point in American carousel craftsmanship.",        items: [
             { name: "M1", description: "Mueller Indian Pony", price: 0, dimensions: "65 x 54 x 13", image: "/Mueller/M1.jpg" },
             { name: "M2", description: "Stripped Outside Row Stander c 1910", price: 60000, dimensions: "65 x 57 x 12", image: "/Mueller/M2.JPG" },
             { name: "M3", description: "Muller Outside Row Stander c 1910", price: 60500, dimensions: "65.5 x 62 x 12", image: "/Mueller/M3.JPG" },
@@ -110,8 +104,7 @@ export const categories = {
     },
     parker: {
         name: "Parker",
-        description: "C.W. Parker carousel figures are known for their sturdy construction and classic American style.",
-        items: [
+        description: "C.W. Parker, known as the 'Amusement King', founded a company that became synonymous with the golden age of American carousels. Parker carousel figures are recognized for their sturdy construction, classic American style, and accessibility. Unlike some of their more ornate contemporaries, Parker horses often feature simpler designs with clean lines and realistic proportions. This made them ideal for use in traveling carnivals, where durability was crucial. Parker's innovation extended beyond carving; he pioneered the use of aluminum in carousel construction, making the rides lighter and more portable. The company's output was prolific, and Parker carousels could be found in towns across America, contributing significantly to the spread of carousel culture in the early 20th century.",        items: [
             { name: "P1", description: "Parker Outside Row Jumper c 1917", price: 33000, dimensions: "49 x 72 x 11", image: "/Parker/P1.JPG" },
             { name: "P2", description: "Parker Outside Row Jumper c 1917", price: 0, dimensions: "49 x 72 x 11", image: "/Parker/P2.JPG", notes: "DONATED TO MERRY GO ROUND MUSEUM" },
             { name: "P3", description: "Parker Outside Row Jumper c 1917", price: 28000, dimensions: "45 x 72 x 13", image: "/Parker/P3.JPG" },
@@ -125,8 +118,7 @@ export const categories = {
     },
     ptc: {
         name: "PTC",
-        description: "Philadelphia Toboggan Company (PTC) figures are renowned for their graceful lines and romantic style.",
-        items: [
+        description: "The Philadelphia Toboggan Company (PTC), founded in 1904, is renowned for producing some of the most elegant and romantic carousel figures in American history. PTC horses are characterized by their graceful lines, refined features, and a sense of gentle motion even in static poses. The company's carvers, including notable artists like John Zalar and Daniel Muller, created figures with a distinctive blend of realism and idealized beauty. PTC carousels often featured elaborate scenery panels and chariots in addition to their exquisite animal figures. The company's long production run and high-quality craftsmanship mean that many PTC carousels are still in operation today, cherished as both amusement rides and works of art. PTC's contribution to carousel history is immense, with their style often seen as the quintessential American carousel aesthetic.",        items: [
             { name: "PTC1", description: "PTC Lion c 1905", price: 35000, dimensions: "0x0x0", image: "/PTC/PTC1.JPG" },
             { name: "PTC2", description: "PTC Tiger c 1905", price: 40000, dimensions: "64 x 60 x 15", image: "/PTC/PTC2.JPG" },
             { name: "PTC3", description: "PTC Camel c 1905", price: 35000, dimensions: "64 x 60 x 15", image: "/PTC/PTC3.JPG" },
@@ -145,8 +137,7 @@ export const categories = {
     },
     hs: {
         name: "Herschell Spillman",
-        description: "Herschell Spillman figures are known for their charming, folk-art style and durable construction.",
-        items: [
+        description: "The Herschell Spillman Company, later known as the Allan Herschell Company, was a major producer of carousels and amusement rides in the early 20th century. Their carousel figures are known for their charming, folk-art style and durable construction. Herschell Spillman horses typically feature simplified forms with bold, stylized details, making them easily recognizable. The company's focus on practicality and affordability made their carousels accessible to a wide range of communities, contributing significantly to the spread of carousel culture across America. In addition to horses, Herschell Spillman produced a variety of menagerie animals and was known for innovations in carousel mechanics. Their legacy continues in the many small-town carousels still in operation, beloved for their nostalgic charm and historical significance.",        items: [
             { name: "H-S Jumper", description: "Classic Herschell Spillman jumping horse", price: 16000, dimensions: "54 x 50 x 11", image: "/HS/hs-jumper.jpg" },
             { name: "H-S Stander", description: "Charming Herschell Spillman standing horse", price: 17000, dimensions: "56 x 52 x 12", image: "/HS/hs-stander.jpg" },
             { name: "HS4", description: "Herschell Spillman Horse", price: 0, dimensions: "0x0x0", image: "/HS/HS4.jpg" },
@@ -155,9 +146,8 @@ export const categories = {
         ]
     },
     foreign: {
-        name: "Foreign",
-        description: "A collection of unique carousel figures from various international makers.",
-        items: [
+        name: "international carvers",
+        description: "The 'Foreign' category encompasses a diverse array of figures from various international makers, each bringing unique cultural influences and artistic traditions to the craft. This collection might include ornate Bavarian-style carvings, whimsical French figures, or elegantly styled English carousel pieces. Foreign carousel animals often feature distinct characteristics that set them apart from their American counterparts, such as different poses, unusual animal choices, or unique decorative elements. These pieces provide a fascinating glimpse into the global history of carousels and amusement rides, showcasing how different cultures interpreted and adapted the art form. Collecting foreign carousel figures allows enthusiasts to appreciate the rich diversity of carousel craftsmanship from around the world.",        items: [
             { name: "EF9", description: "German Children's Ride Giraffe Seat", price: 6500, dimensions: "64 x 60 x 15", image: "/foreign/EF10.JPG" },
             { name: "EF10", description: "German Children's Ride Camel Seat", price: 6100, dimensions: "64 x 60 x 15", image: "/foreign/EF10.JPG" },
             { name: "EF2", description: "French Bayd Dog", price: 6200, dimensions: "64 x 60 x 15", image: "/foreign/EF2.JPG" },
