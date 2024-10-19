@@ -72,7 +72,7 @@ export default function Events() {
             <section className="cta">
                 <div className="container">
                     <h2 className="section-title">Ready to Make Magic?</h2>
-                    <p>All our carousel animals are available for your events and commercial uses. Let's discuss how we can bring vintage charm to your next occasion.</p>
+                    <p>All our carousel animals are available for your events and commercial uses! Let's discuss how we can bring vintage charm to your next occasion.</p>
                     <a href="/contact" className="btn-primary">Contact us </a>
                 </div>
             </section>
